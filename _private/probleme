@@ -1,0 +1,9 @@
+es kann nicht garantiert werden dass die RA sich selbst felder definiert ohne die superior RA zu beachten (wie im vorherigen konzept von oiddb1 gelöst)
+
+es wird vorausgesetzt dass ein whois server aufgesetzt werden kann
+
+es ist unklar wie schreibender zugriff gewährt werden kann
+
+es ist nicht möglich, geheime oids zu erzeugen, man kann nur die attribute geheim machen
+
+wird rwhois angwandt, dann erfahren die superior nodes den token, der nicht für sie bestimmt ist

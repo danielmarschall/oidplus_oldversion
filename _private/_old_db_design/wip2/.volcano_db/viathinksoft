@@ -1,0 +1,231 @@
+# VIATHINKSOFT CODENAME VOLCANO
+# TEST DATABASE
+# !!! PROVIDED DATA IS NOT AUTHORATIVE !!!
+# !!! CONFIDENTIAL !!!
+
+# TODO: oid:.1.3.6 ?
+
+# TODO: irgendwie mit vmd merged?
+# TODO: attribute irgendwie einzigartig machen? packagename/oid?
+
+# --- ViaThinkSoft OIDs ---
+oid:1.3.6.1.4.1.37476 delegation 9999 <here>
+oid:1.3.6.1.4.1.37476 identifier example 9999
+oid:1.3.6.1.4.1.37476 unicodelabel Example 9999
+
+oid:1.3.6.1.4.1.37476 delegation 1 <here>
+oid:1.3.6.1.4.1.37476 delegation 2 <here>
+
+oid:1.3.6.1.4.1.37476.1 identifier members
+oid:1.3.6.1.4.1.37476.1 description :Members of ViaThinkSoft
+
+oid:1.3.6.1.4.1.37476.2 identifier products
+oid:1.3.6.1.4.1.37476.2 description :Products of ViaThinkSoft
+
+oid:1.3.6.1.4.1.37476.9999 delegation 1 <here>
+oid:1.3.6.1.4.1.37476.9999.1 delegation 2 <here>
+oid:1.3.6.1.4.1.37476.9999.1.2 delegation 3 <here>
+oid:1.3.6.1.4.1.37476.9999.1.2.3 delegation 4 <here>
+oid:1.3.6.1.4.1.37476.9999.1.2.3 description :hello world
+oid:1.3.6.1.4.1.37476.9999.1.2.3 description :	this is a test
+oid:1.3.6.1.4.1.37476.9999.1.2.3 description :		another test http://www.example.com/
+#oid:1.3.6.1.4.1.37476.9999.1.2.3.4 delegation 5 <here>
+
+# --- ViaThinkSoft CLSIDs ---
+clsid:viathinksoft delegation decoder <here>
+clsid:viathinksoft.decoder delegation {0001} <here>
+
+# TODO: clsid:{0001} nicht möglich?
+clsid:viathinksoft.decoder.{0001} name Test CLSID
+
+# --- ViaThinkSoft Package names ---
+packagename:de.viathinksoft delegation example <here>
+packagename:de.viathinksoft.example soa
+
+# --- ViaThinkSoft DOIs ---
+
+# --- ViaThinkSoft MISC ---
+misc:viathinksoft delegation members
+misc:viathinksoft delegation az
+misc:viathinksoft.members
+misc:viathinksoft.az
+misc:viathinksoft.az.a.2012
+
+# --- ViaThinkSoft licenses ---
+licmgr:viathinksoft delegation decoder
+licmgr:viathinksoft.decoder delegation vclA
+licmgr:viathinksoft.decoder license GPL
+
+licmgr:viathinksoft.decoder.vclA license LGPL
+
+# --- ViaThinkSoft IPv4 delegations ---
+
+# TODO: datumsangaben
+# TODO: cahost
+# TODO: revdns
+
+ipv4:de.viathinksoft delegation alpha
+ipv4:de.viathinksoft.alpha status cancelled
+
+ipv4:de.viathinksoft.alpha delegation 84.16.234.13
+ipv4:de.viathinksoft.alpha.84.16.234.13 status cancelled
+ipv4:de.viathinksoft.alpha.84.16.234.13 if eth0
+ipv4:de.viathinksoft.alpha.84.16.234.13 type ipv4
+ipv4:de.viathinksoft.alpha.84.16.234.13 netmask 255.255.255.0
+ipv4:de.viathinksoft.alpha.84.16.234.13 network 84.16.234.0
+ipv4:de.viathinksoft.alpha.84.16.234.13 network-cidr 84.16.234.0/24
+ipv4:de.viathinksoft.alpha.84.16.234.13 broadcast 84.16.234.255
+ipv4:de.viathinksoft.alpha.84.16.234.13 gateway 84.16.234.1
+ipv4:de.viathinksoft.alpha.84.16.234.13 dns-nameserver 217.20.116.1
+ipv4:de.viathinksoft.alpha.84.16.234.13 dns-nameserver 217.20.115.1
+ipv4:de.viathinksoft.alpha.84.16.234.13 dns-nameserver 62.80.2.35
+ipv4:de.viathinksoft.alpha.84.16.234.13 dns-nameserver 213.221.110.235
+ipv4:de.viathinksoft.alpha.84.16.234.13 service www
+ipv4:de.viathinksoft.alpha.84.16.234.13 service mail
+
+ipv4:de.viathinksoft.alpha delegation 84.16.228.116
+ipv4:de.viathinksoft.alpha.84.16.228.116 status cancelled
+ipv4:de.viathinksoft.alpha.84.16.228.116 if eth0:0
+ipv4:de.viathinksoft.alpha.84.16.228.116 type ipv4
+ipv4:de.viathinksoft.alpha.84.16.228.116 netmask 255.255.255.0
+ipv4:de.viathinksoft.alpha.84.16.228.116 network 84.16.228.0
+ipv4:de.viathinksoft.alpha.84.16.228.116 network-cidr 84.16.228.0/24
+ipv4:de.viathinksoft.alpha.84.16.228.116 broadcast 84.16.228.255
+ipv4:de.viathinksoft.alpha.84.16.228.116 service ssh
+ipv4:de.viathinksoft.alpha.84.16.228.116 service ftp
+ipv4:de.viathinksoft.alpha.84.16.228.116 service www
+
+ipv4:de.viathinksoft.alpha delegation 84.16.228.117
+ipv4:de.viathinksoft.alpha.84.16.228.117 status cancelled
+ipv4:de.viathinksoft.alpha.84.16.228.117 if eth0:1
+ipv4:de.viathinksoft.alpha.84.16.228.117 type ipv4
+ipv4:de.viathinksoft.alpha.84.16.228.117 netmask 255.255.255.0
+ipv4:de.viathinksoft.alpha.84.16.228.117 network 84.16.228.0
+ipv4:de.viathinksoft.alpha.84.16.228.117 network-cidr 84.16.228.0/24
+ipv4:de.viathinksoft.alpha.84.16.228.117 broadcast 84.16.228.255
+ipv4:de.viathinksoft.alpha.84.16.228.117 service www
+
+ipv4:de.viathinksoft delegation beta
+ipv4:de.viathinksoft.beta status cancelled
+
+ipv4:de.viathinksoft.beta delegation 89.149.253.178
+ipv4:de.viathinksoft.beta.89.149.253.178 status cancelled
+ipv4:de.viathinksoft.beta.89.149.253.178 if eth1
+ipv4:de.viathinksoft.beta.89.149.253.178 type ipv4
+ipv4:de.viathinksoft.beta.89.149.253.178 netmask 255.255.255.0
+ipv4:de.viathinksoft.beta.89.149.253.178 network 89.149.253.0
+ipv4:de.viathinksoft.beta.89.149.253.178 network-cidr 89.149.253.0/24
+ipv4:de.viathinksoft.beta.89.149.253.178 broadcast 89.149.253.255
+ipv4:de.viathinksoft.beta.89.149.253.178 gateway 89.149.253.1
+ipv4:de.viathinksoft.beta.89.149.253.178 dns-nameserver 217.20.116.1
+ipv4:de.viathinksoft.beta.89.149.253.178 dns-nameserver 217.20.115.1
+ipv4:de.viathinksoft.beta.89.149.253.178 service www
+ipv4:de.viathinksoft.beta.89.149.253.178 service ftp
+ipv4:de.viathinksoft.beta.89.149.253.178 service ssh
+ipv4:de.viathinksoft.beta.89.149.253.178 service mail
+
+ipv4:de.viathinksoft delegation gamma
+ipv4:de.viathinksoft.gamma status active
+
+ipv4:de.viathinksoft.gamma delegation 95.211.38.42
+ipv4:de.viathinksoft.gamma.95.211.38.42 status active
+ipv4:de.viathinksoft.gamma.95.211.38.42 if eth0
+ipv4:de.viathinksoft.gamma.95.211.38.42 type ipv4
+ipv4:de.viathinksoft.gamma.95.211.38.42 netmask 255.255.255.224
+ipv4:de.viathinksoft.gamma.95.211.38.42 network 95.211.38.32
+ipv4:de.viathinksoft.gamma.95.211.38.42 network-cidr 95.211.38.32/27
+ipv4:de.viathinksoft.gamma.95.211.38.42 broadcast 95.211.38.63
+ipv4:de.viathinksoft.gamma.95.211.38.42 gateway 95.211.38.62
+ipv4:de.viathinksoft.gamma.95.211.38.42 dns-nameserver 62.212.65.123
+ipv4:de.viathinksoft.gamma.95.211.38.42 dns-nameserver 62.212.64.122
+ipv4:de.viathinksoft.gamma.95.211.38.42 revdns viathinksoft.de
+ipv4:de.viathinksoft.gamma.95.211.38.42 service www
+ipv4:de.viathinksoft.gamma.95.211.38.42 service mail
+
+ipv4:de.viathinksoft.gamma delegation 95.211.38.108
+ipv4:de.viathinksoft.gamma.95.211.38.108 status active
+ipv4:de.viathinksoft.gamma.95.211.38.108 confidential
+ipv4:de.viathinksoft.gamma.95.211.38.108 network-cidr 95.211.38.96/27
+ipv4:de.viathinksoft.gamma.95.211.38.108 if eth0:1
+ipv4:de.viathinksoft.gamma.95.211.38.108 type ipv4
+ipv4:de.viathinksoft.gamma.95.211.38.108 netmask 255.255.255.224
+ipv4:de.viathinksoft.gamma.95.211.38.108 network 95.211.38.96
+ipv4:de.viathinksoft.gamma.95.211.38.108 broadcast 95.211.38.127
+ipv4:de.viathinksoft.gamma.95.211.38.108 gateway 95.211.38.126
+ipv4:de.viathinksoft.gamma.95.211.38.108 dns-nameserver 62.212.65.123
+ipv4:de.viathinksoft.gamma.95.211.38.108 dns-nameserver 62.212.64.122
+# TODO: ändern?
+# ipv4:de.viathinksoft.gamma.95.211.38.108 revdns ssh.viathinksoft.de
+ipv4:de.viathinksoft.gamma.95.211.38.108 revdns hosted-by.leaseweb.com
+ipv4:de.viathinksoft.gamma.95.211.38.108 service ssh
+
+# --- ViaThinkSoft IPv6 delegations ---
+
+ipv6:de.viathinksoft.gamma delegation 2001:1af8:4100:a061:1::/112
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112 name ViaThinkSoft IPv6 Rack address space (in 2001:1af8:4100:a061::/64 net)
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112 type ipv6-net
+
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112 delegation 2001:1af8:4100:a061:1::1337/128
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 status active
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 assignment daniel-marschall@viathinksoft.de 2012-02-22
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 if eth0
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 type ipv6
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 netmask 64
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 gateway 2001:1af8:4100:a061::1
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 name ViaThinkSoft Main IPv6
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 revdns ipv6.viathinksoft.de
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 service www
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 service mail
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 cahost viathinksoft.de
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::1337/128 cahost www.viathinksoft.de
+
+# TODO: read/write auth... multi auth entries ...? jedes element ein anderer auth.
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112 delegation 2001:1af8:4100:a061:1::4041/128
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 read-auth plain:vierzig 
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 read-auth MD5:
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 status active
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 confidential
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 assignment daniel-marschall@viathinksoft.de 2012-02-26
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 if eth0
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 type ipv6
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 netmask 64
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 gateway 2001:1af8:4100:a061::1
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 name ViaThinkSoft Auth IPv6
+# TODO: ändern?
+# ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 revdns ssh.viathinksoft.de
+ipv6:de.viathinksoft.gamma.2001:1af8:4100:a061:1::/112.2001:1af8:4100:a061:1::4041/128 service ssh
+
+# --- ViaThinkSoft domain managment ---
+
+# TODO uvst
+# TODO: projektorientierte anordnung
+
+# 1&1
+domain: delegation de.viathinksoft
+
+# Speedbone
+domain: delegation de.personal-webbase
+domain: delegation de.md-technologie
+domain: delegation de.md-technology
+domain: delegation com.viathinksoft
+domain: delegation com.personal-webbase
+
+& United Domains
+domain: delegation de.gegen-killerspiele
+
+# --- ViaThinkSoft CA managment ---
+
+# --- ViaThinkSoft Aktenzeichen ---
+
+# --- Human Resources ---
+
+hr:de.viathinksoft soa
+hr:de.viathinksoft delegation marschall
+hr:de.viathinksoft.marschall short ma
+hr:de.viathinksoft delegation vn
+
+
+# TODO: <here> optional?
+# TODO: problem bei nicht-präfix delegation (z.b. clsid, ipv6)
+# TODO: wie informationen geheim halten?
+

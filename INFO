@@ -1,0 +1,20 @@
+
+This is the first (and last) public release of OIDplus 1.0
+
+The project OIDplus 1.0 was used internally at ViaThinkSoft
+and was eventually replaced by OIDplus 2.0
+
+OIDplus 1.0 is not developed anymore, so please use OIDplus 2.0 instead:
+https://oidplus.viathinksoft.com/
+
+This code was released after OIDplus 1.0 has already been deprecated for a long time,
+because we think that parts of the codes might be still interesting
+and we don't want to simply throw it away.
+
+OIDplus 1.0 comes with test data that was actually the real ViaThinkSoft database,
+but a few confidential things have been removed and some example stuff has been added.
+The data was included in the public release to help you better understand
+how the database structure and macros work.
+
+-- Daniel Marschall   20 March 2020
+

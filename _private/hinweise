@@ -1,0 +1,5 @@
+
+Q: Wieso kann man in den Beschreibungen keine Links setzen (<a href=...>)
+A: Eck-Klammern < > sollen generell verwendet werden dürfen, weshalb sie nicht als HTML interpretiert werden.
+   Da die Ausgabe von OID+ Inhalt auch über das whois Protkoll erfolgen soll, kann HTML nicht verwendet werden.
+   Das Klickbar-Machen von Links ist nur eine Hilfestellung für das Web-Interface.

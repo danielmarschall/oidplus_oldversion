@@ -1,0 +1,25 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.1                              identifier:members
+oid:.1.3.6.1.4.1.37476.1                              unicodelabel:Members
+oid:.1.3.6.1.4.1.37476.1                              description:Members/Developers
+oid:.1.3.6.1.4.1.37476.1                              allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.1.1                            identifier:victor
+oid:.1.3.6.1.4.1.37476.1.1                            identifier:vnegoescu
+oid:.1.3.6.1.4.1.37476.1.1                            description:Victor-Philipp Negoescu
+oid:.1.3.6.1.4.1.37476.1.1                            ra(1)[in][xt]:ADDR_VNE
+
+oid:.1.3.6.1.4.1.37476.1.2                            identifier:daniel-marschall
+oid:.1.3.6.1.4.1.37476.1.2                            identifier:dmarschall
+oid:.1.3.6.1.4.1.37476.1.2                            description:Daniel Marschall
+oid:.1.3.6.1.4.1.37476.1.2                            ra(1)[in][xt]:ADDR_MAR
+
+oid:.1.3.6.1.4.1.37476.1.3                            identifier:mduepjohann
+oid:.1.3.6.1.4.1.37476.1.3                            description:Michael Düpjohann
+oid:.1.3.6.1.4.1.37476.1.3                            ra(1)[in][xt]:ADDR_MD
+
+oid:.1.3.6.1.4.1.37476.1.4                            identifier:thommy
+oid:.1.3.6.1.4.1.37476.1.4                            identifier:tbretzke
+oid:.1.3.6.1.4.1.37476.1.4                            description:Thomas Bretzke
+oid:.1.3.6.1.4.1.37476.1.4                            ra(1)[in][xt]:ADDR_THOMMY

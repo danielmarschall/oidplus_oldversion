@@ -1,0 +1,15 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:<GENROOT> name:OID+ Generation Root
+# kein asn1id, da einzigartigkeit nicht garantiert (z.b. wenn genroot=2.25)
+#oid:<GENROOT> identifier:oidgenroot
+
+oid:<GENROOT>.0 identifier:ns
+oid:<GENROOT>.0 description:User defined namespaces.
+
+oid:<GENROOT>.10 identifier:doi
+oid:<GENROOT>.10 description:Children are 10.<orgid>.<suffix-sha1-uuid>
+oid:<GENROOT>.10 description:Digital Object Identifier (DOI) information objects mapped to the OID tree.
+
+oid:<GENROOT>.25 identifier:uuid
+oid:<GENROOT>.25 description:Universally Unique Identifier (UUID) information objects mapped to the OID tree.

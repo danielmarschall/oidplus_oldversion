@@ -1,0 +1,20 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+# TODO: wie kann man einen solchen auto-generierten index confidential machen?
+
+domain:[co]test.example.com name:Example website
+domain:[co]test.example.com owner[xt]:ADDR_MAR
+#domain:[co]test.example.com admin[xt]:ADDR_MAR
+domain:[co]test.example.com tech[xt]:ADDR_MAR
+#domain:[co]test.example.com zone[xt]:ADDR_MAR
+#domain:[co]test.example.com billing[xt]:ADDR_MAR
+domain:[co]test.example.com hosting[xt]:ADDR_MAR
+domain:[co]test.example.com nameserver:    ns11.example.com # inherited
+domain:[co]test.example.com nameserver:    ns12.example.com # inherited
+domain:[co]test.example.com status:        delegated subdomain
+domain:[co]test.example.com created:       unknown
+domain:[co]test.example.com expires:       never
+domain:[co]test.example.com changed:       2012-11-20 00:40:57 GMT
+domain:[co]test.example.com source:        ViaThinkSoft
+domain:[co]test.example.com [del]ra
+domain:[co]test.example.com attribute:noexport

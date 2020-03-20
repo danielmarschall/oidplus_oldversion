@@ -1,0 +1,69 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+#:TEST_MACRO identifier:__FU__
+#oid:.2.999 [xt]identifier:TEST_MACRO
+
+oid:.2.999 identifier:ax
+oid:.2.999 desc:OIDAx
+
+oid:.2.999.3 identifier:ax
+oid:.2.999.3 identifier:bx
+oid:.2.999.3 identifier:cx
+oid:.2.999.3 desc:OIDAx
+
+#test
+oid:.2.999.3.4 [co]identifier:ax
+oid:.2.999.3.4 [co]read-auth(plain):8888
+oid:.2.999.3.4 [co]desc:OIDAx
+
+oid:.2.999.1.2.3 identifier:a
+oid:.2.999.1.2.03 desc:OIDA
+
+oid:.2.999.1.2.3.4 identifier:b
+oid:.2.999.1.2.3.4 desc:OIDB
+
+oid:.2.999.1.2.3.4.5 identifier:c
+oid:.2.999.1.2.3.4.5 desc:OIDC
+oid:.2.999.1.2.3.4.5 index(str):hello
+
+oid:.2.999.1.2.3.4.6 identifier(abc,def,xxx):d
+oid:.2.999.1.2.3.4.6 desc(abc):OIDD
+
+oid:.2.999.1.2.3.4.6.7.8.9.10 identifier(abc,def,xxx):d
+oid:.2.999.1.2.3.4.6.7.8.9.10 desc(abc):OIDD
+
+oid:.2.999.1.2.3.4.6.7.8.9.10.11 identifier(abc,def,xxx):d
+oid:.2.999.1.2.3.4.6.7.8.9.10.11 desc(abc):OIDD
+
+oid:.2.999.1.2.3.4.6.7.8.9.10.11.12 identifier(abc,def,xxx):d
+oid:.2.999.1.2.3.4.6.7.8.9.10.11.12 desc(abc):OIDD
+
+.2.888.1.2.4 identifier:x
+.2.888.1.2.4 desc:OIDx
+
+.2.9.99 desc:zero
+.2.9.99 identifier:xxy
+
+.2 [xt][in]ra(123):HDL-VTS
+
+oid:.2.123.1 desc:extend test
+oid:.2.123.1 [xt][in]ra(45):HDL-MAR
+#oid:.2.123.1 [xt][in]raWithXTin:HDL-DMX
+#oid:.2.123.1 [xt]raWithXT:HDL-DMX
+#oid:.2.123.1 [in]raWithIN:myIn
+#oid:.2.123.1 [xt][in]raWithXTin:NOT-EXISTING
+
+oid:.2.123.1.2 desc:Extended
+oid:.2.123.1.2 raWithXTin:ferdina
+
+oid:.2.123.1.2.3 desc:Extended 3
+oid:.2.123.1.2.3 raWithXTin:nomnomnom
+
+oid:.2.123.1.2.3.4 desc:Extended 4
+oid:.2.123.1.2.3.4 raWithXTin:eraeraera
+
+# todo
+. ra(1)[in][xt]:C_MAR
+. (2)ra[in][xt]:C_VTS
+# . 1.ra(1)-date:2013
+

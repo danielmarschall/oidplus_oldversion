@@ -1,0 +1,53 @@
+
+modular: 1volcano übernimmt derzeit zu viele aufgaben, die eigentlich zu 2oidplus gehört, z.b. namespaces-to-uuid
+
+namespaces (doi, domain, packagename) mit mÃ¶glichkeit, eine instanz hochzugehen
+
+listChildren ist VOLL langsam!
+	http://webcache.googleusercontent.com/search?q=cache:5IWrJQXlDDgJ:www.xdebug.org/docs/profiler+&cd=1&hl=de&ct=clnk&gl=de
+
+automatisch generierte uuid oids: alphanum identifier "uuid-<uuid>" (identifier darf nicht mit nummern anfange)
+
+in der db auch folgendes erlauben:  "urn:oid:" oder "oid:"  oder dottless...
+
+An invalid OID , e.g. "oidplus:.3.0" should not raise an exception visible to the user
+
+
+ip4/6 -- mit richtiger vererbung im oid-baum!
+javapackage -- mit richtiger vererbung im oid-baum!
+doi -- mit richtiger vererbung im oid-baum!
+andere identifier: wirklich als namebased uuid machen, oder als base64-oid mapping?
+
+
+
+bei freeoid dem whois server folgen! (außer unserem eigenen, wegen endlos-rekursion)
+
+!list -> soll nicht scheiße einrücken, wenn es mehrere roots gibt (z.B. PEN und UUID), oder wenigstens gescheit einrücken, 1.3 und 2.25
+
+eine oid, die nur ".2.12.3.4.5.6 *invisible:0" hat, ist not-defined. ist das ok?
+
+!! wie eine inherited node löschen? [del]?
+
+überdenken, wann ein feld overwrite wird.
+
+[in] attribut geht nicht für "not found" oids...
+
+xml interface fuer oidinfo
+
+oid+:
+	guid: !!!
+	doi:
+	packagename:
+	ipv4/6... alles was vorher in oid+ dabei war
+	-> soll automatisch als index erstellt werden!
+
+man soll DOIs auch vererben können, mit distance usw --> vts doi to oid mapping!
+
+link zu oidinfo bei jeder oid -> will eine ping-api
+
+que: wird DRAFT vererbt?
+
+!! *<url> -> [include]<url>
+
+read-auth aufsplitten in invisible auth + confidential auth
+

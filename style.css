@@ -1,0 +1,31 @@
+body {
+	background:#F2EADC;
+	color:black;
+	font-family:'Times New Roman';
+}
+
+h1 {
+	font-family:Arial;
+	font-size:30px;
+}
+
+a:link, a:visited {
+	color:darkblue;
+}
+
+p.green {
+	font-size:14px;
+}
+
+p.green a:link, p.green a:visited {
+	color:green;
+}
+
+a:hover, p.green a:hover {
+	color:#DD0000;
+}
+
+#headertable {
+	background:#EDDC21;
+	color:black;
+}

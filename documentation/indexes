@@ -1,0 +1,13 @@
+
+
+possibility 1:
+
+ipv4:<ip> xx:xx
+-> OID namebased UUID
+
+possibility 2 ("information object"):
+
+oid:2.999 xx:xx
+oid:2.999 index(ipv4):<ip>
+-> free choice of OID
+

@@ -1,0 +1,91 @@
+*invisible_when_not_auth
+
+auth token anzahl begrenzen um abuse zu verhindern?
+
+unicode-identifiers + verifizieren
+
+showSource() anders benennen
+
+OID line: anzeigen wie viele kinder es darunter gibt
+
+Configs
+- oidInsivibleWhenAllAttribsAreCondiential
+
+[in]*noauth-invisible:yes
+
+*described:no
+
+< > = link empfehlung?
+
+# todo: "father" anzeige bei einer undescribed oid? auch väter die nicht existieren?
+# todo: fahter(1) father(2) etc machen bis zu "." beschreiben im baum
+# todo: --> aber dann sollte man eine OID als "not described" markieren können, damit meine PEN der ROOT bleibt und nicht "." .
+
+viele dinge wie felder oder auch macro-namen sollen case insensitive sein
+
+*soa ? soll heißen dass alle auths verloren gehen
+# write-auth(dummy) .... geht das auch anders als dummy, z.b. wenn neue ...-auth hinzukommen gibts probleme
+
+# todo: kann man '#' auch hinter eine zeile setzen? nö.
+
+clsid vererbbar?
+
+flags (auch für gui)
+- canelled oid
+- leaf oid
+- draft oid (!)
+- invisible (secret) oid
+- type: ipv6 etc != index-search-algorithm
+
+ein index term soll auch mit "." beginnen dürfen
+
+$oid vs $handle (macro) namen ... macros generell ausschließen
+
+ascii art possible in den comments?
+
+illegale oids (z.b. 3.1) und illegale identifier namen (z.b. 1and1) -- wird überall die OID geprüft (sanitize?)
+
+eine oid mit nur [co] oids -- funktioniert da alles?
+
+case insensitive attributes? und commandos
+
+handel soll nicht als oid gewertet werden in den funktionen
+handle soll nun macro heißen
+html core
+
+derzeit überschreibt ra(2) ra(1). ist das gut? ja!
+
+antispam
+
+!roots -- listen der wurzeln
+
+dyndns auth
+
+vts test datenbank erschaffen
+
+format dokumentieren und referenzimplementierung veröffenltlichen (todos sammeln)
+
+MACROS mit parametern. ?? ist der attrib_name, __1__ ist der erste parameter, __2__ der zweite usw
+
+{...} empfehlung für eine oidplus: verknüpfung (html view)
+<...> empfehlung für eine externe http verknüpfung (html view)
+
+list all: listet auch alle index() felder
+
+2.999.1 durch neues format ersetzen
+
+::192.168.69.1 soll akzeptiert werden
+
+alle eingabebefehle sollen case sensitive sein
+
+vts oid admin
+
+
+
+htmlview: tokens in cookie
+oid:... notation auch erlauben
+
+nutzt man die weiterleitungen (rwhois), dann bekommt die superior RA mit, welche authtokens verwendet werden...
+
+write auth
+

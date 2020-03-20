@@ -1,0 +1,70 @@
+Dateisuche:
+
+sorted
+
+Header:
+
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+Line:
+
+<namespace>:<identifier> [<flags>]<attrib_name>[(<attrib_param[s]>)]:<value>
+
+[]= optional
+
+Comments:
+
+Comment lines start with #
+
+Flags:
+
+[add]	Additive flag		-> The field will not overwrite same-named fields in the hierarchy; instead it will be added.
+[co]	Confidential flag	-> The field will be redacted, unless a auth key matches a previous defined read-auth in the hierarchy tree
+[xt]	Extend flag
+	Value is a handle
+[in]	Inherit flag		-> The value will be interhited to all future OIDs, as long as it isn't overwritten.
+[del]	Delete flag		-> Delete all previously declared fields. Required if you want to remove an inherited element.
+
+Namespaces (case insensitive)
+	oid
+	guid will be converted to oid
+	other namespaces (e.g. doi) will be converted to a namebased uuid which will be converted to an oid
+
+Special namespaces (case insensitive)
+	*macro
+	*external	-> <identifier> is an URL which will be included
+
+OID extending process:
+
+- <SYSID> inside an OID will be replaced to the integer representation of
+  system_unique_id (defined in db/local.conf, and will be automatically generated).
+- <GENROOT> inside an OID will be replaced to the generation root, which is by default .2.25.<SYSID>
+
+System fields
+-------------
+
+System fields always begin with '*' and are always invisible for everyone.
+
+Currently supported system fields are:
+
+*read-auth : Contains auth infos for [co] fields and invisible OIDs
+*invisible : (0|1) <-- will be shown if read-auth is available for the current OID (not the OID which defined *invisible!)
+
+Macro params
+------------
+
+oid:.<oid> [xt]<attrib_name>(...):<macro name> <param 1> <param 2>
+<macro name> == __0__
+<param 1> == __1__
+...
+__...__ will be replaced in attrib_name, attrib_params and value .
+Note: Unused place holders will not be removed, so parametrized marcos can use parametrized macros itself.
+Note: Separator is any kind of whitespace. Multiple whitespaces are OK!
+
+Fields with special meaning
+---------------------------
+
+identifier:	Is the ASN.1 identifier. It MUST have the correct syntax.
+attribute:	
+unicodelabel:	The unicode label. Syntax checking not yet implemented.
+

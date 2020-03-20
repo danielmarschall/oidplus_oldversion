@@ -1,0 +1,39 @@
+
+ViaThinkSoft OID Mapping
+
+Instead of using a namebased UUID to map identifiers to the OID tree (in arc 2.25),
+this mapping mechanism allows to resolve an OID back into its original
+identifier.
+
+Mapping stringToNumber: .1.3.6.1.4.1.37476.3.2.3.1
+
+mapping(50)
+	misc(0)
+		nid<base64>???
+			sub-nid<base64>???
+				...???
+					id<base64>
+	urn(1)
+		nid<base64>
+			sub-nid<base64>
+				...
+					id<base64>
+	doi(2)
+		10
+			org1000(1000)
+				id<base64>
+					...???		<-- ein feld "no-full-doi" => keine url zeigen
+	javapackage(3)
+		nid<base64>
+			...
+				nid<base64>
+	ipv4
+		???
+	ipv6
+		???
+	isbn
+		10
+			<isbn>
+		13
+			<isbn>
+

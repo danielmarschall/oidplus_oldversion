@@ -1,0 +1,23 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.2.2                            identifier:decoder
+oid:.1.3.6.1.4.1.37476.2.2                            description:(De)Coder
+
+oid:.1.3.6.1.4.1.37476.2.2.1                          identifier:fileformat
+oid:.1.3.6.1.4.1.37476.2.2.1                          description:(De)Coder file format
+
+oid:.1.3.6.1.4.1.37476.2.2.1.3                        identifier:dc3
+oid:.1.3.6.1.4.1.37476.2.2.1.3                        description:File formats for (De)Coder 3.x
+
+oid:.1.3.6.1.4.1.37476.2.2.1.3.1                      identifier:dc31
+oid:.1.3.6.1.4.1.37476.2.2.1.3.1                      description:(De)Coder 3.1 File Format
+oid:.1.3.6.1.4.1.37476.2.2.1.3.1                      attribute:leaf
+
+oid:.1.3.6.1.4.1.37476.2.2.1.3.2                      identifier:dc32
+oid:.1.3.6.1.4.1.37476.2.2.1.3.2                      description:(De)Coder 3.2 File Format
+oid:.1.3.6.1.4.1.37476.2.2.1.3.2                      attribute:leaf
+
+oid:.1.3.6.1.4.1.37476.2.2.1.4                        identifier:dc4
+oid:.1.3.6.1.4.1.37476.2.2.1.4                        attribute:leaf
+oid:.1.3.6.1.4.1.37476.2.2.1.4                        specification:https://www.viathinksoft.de/info/decoder/dc4-spec.txt
+oid:.1.3.6.1.4.1.37476.2.2.1.4                        description:(De)Coder 4.x file format

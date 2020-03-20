@@ -1,0 +1,10 @@
+
+- mapping übearbeiten. innerhalb der eigenen ra doi und other unterscheiden .und alle oids beschreiben in _genroot.db
+
+- <SYSID_INT> und <SYSID_UUID> und <GENROOT> auch in der kompletten zeile ersetzen, sodass man es in texten verwenden kann
+
+eingabefehler im request beim webinterface darf nicht in "internal db error" volcanoexception enden
+
+95.211.38.42 wird nicht erkannt... warum? man muss "ipv4" davor machen
+--> das liegt daran, dass der eigentliche index /32 am ende noch hat
+

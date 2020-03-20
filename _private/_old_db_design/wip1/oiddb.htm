@@ -1,0 +1,348 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>OIDDB Format</title>
+</head>
+
+<body>
+
+<h1>&quot;OIDDB/0.1&quot; <font color="red">DRAFT</font> file format description and examples</h1>
+
+<p>(C) 2012 ViaThinkSoft, Daniel Marschall</p>
+
+<h2>Intended purpose</h2>
+
+<ul>
+    <li>This format describes an OID tree resp. a part of an OID
+        tree</li>
+    <li>Main purpose: Format for the OID tree viewer &quot;OID
+        Plus&quot; by ViaThinkSoft, which is intended for smaller
+        registration authorities who need a simply way to manage
+        their OID allocations as well as present their tree to
+        the public</li>
+    <li>Another purpose can be to create a more simple
+        alternative to ORS</li>
+    <li>Maybe the format could be globally describe OIDs as an
+        open and human readable format, maybe also for
+        interchanging informations</li>
+</ul>
+
+<h2>Use cases</h2>
+
+<ul>
+    <li>Easily administrate, delegate and display the tree for a
+        specific RA</li>
+    <li>Look up an OID by identifier, unicode label (like ORS) or
+        by numerical value =&gt; Alternative to ORS</li>
+</ul>
+
+<h2>Advantages</h2>
+
+<ul>
+    <li>Highly scaleable: No database needed. The &quot;zones&quot;
+        are working fine just with textfiles, but dynamic
+        generated records are also OK!</li>
+    <li>Node can be delegated, which makes this format also
+        suitable as an alternative to the complex ORS</li>
+    <li>Format can be extended easily</li>
+    <li>No individual name server necessary for ORS functionality</li>
+    <li>HTTPS connections are no problem</li>
+    <li>File can be easily filtered by &quot;grep&quot; because
+        every line contains just 1 attribute and contains the OID
+        &quot;zone&quot;</li>
+    <li>Simplyness: The main format is simply: &lt;root zone&gt;
+        &lt;attribute&gt; &lt;params&gt;</li>
+</ul>
+
+<h2>Disadvantages</h2>
+
+<ul>
+    <li>The FORMAT itself allows also illegal labels etc. The OID
+        viewer has to check all data for validity</li>
+</ul>
+
+<h2>Format</h2>
+
+<ul>
+    <li>Each zone file begins with &quot;[OIDDB/0.1]&quot; in the
+        first line.</li>
+    <li>Whitespaces at the beginning or end of every line (except
+        first line) are tolerated</li>
+    <li>Every line contains either '#' (comment line) or a &lt;zone
+        record&gt;</li>
+    <li>Comments cannot be in the same line as a zone record!
+        They need an separate line.</li>
+    <li>&lt;zone record&gt; is defined as &lt;zone&gt; &lt;attribute&gt;
+        &lt;parameters&gt;</li>
+    <li>&lt;zone&gt; is either an dot-notation OID or &quot;root&quot;
+        (root is the &quot;zone&quot; which delegates the OIDS 0,
+        1 and 2).</li>
+    <li>&lt;attribute&gt; is an attribute in uppercase (see below
+        for valid attributes and their &lt;parameters&gt;)</li>
+    <li>Between zone, attribute and parameters there are
+        whitespaces (but no line break)</li>
+    <li>If an attribute is unknown by the client, it will be
+        simply ignored</li>
+</ul>
+
+<h2>Current list of attributes</h2>
+
+<table border="2">
+    <tr>
+        <td><strong>Attribute</strong></td>
+        <td><strong>Inherited from parent</strong></td>
+        <td><strong>Scope [1]</strong></td>
+        <td><strong>Parameters</strong></td>
+        <td><strong>Comments</strong></td>
+    </tr>
+    <tr>
+        <td>SOA (valid for all NIDs)</td>
+        <td>No</td>
+        <td>LOCAL RA</td>
+        <td>None</td>
+        <td>Place holder if no delegations or attributes are available for this object.</td>
+    </tr>
+    <tr>
+        <td>RA</td>
+        <td>If not set [3]</td>
+        <td>LOCAL RA</td>
+        <td>&quot;&lt;RA contact information, human-readable, '\n'
+        allowed&gt;&quot;</td>
+        <td>[7]</td>
+    </tr>
+    <tr>
+        <td>NAME</td>
+        <td>No</td>
+        <td>LOCAL RA</td>
+        <td>&quot;&lt;Single line name resp very short
+        description&gt;&quot;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>DESCRIPTION</td>
+        <td>No</td>
+        <td>LOCAL RA</td>
+        <td>&quot;&lt;Description and additional information,
+        human-readable, '\n' allowed&gt;&quot;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>DELEGATION</td>
+        <td>No</td>
+        <td>LOCAL RA</td>
+        <td>&lt;numeric child identifier&gt; &lt;zone file
+        location [2]&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>PRIVATECHILD</td>
+        <td>No</td>
+        <td>LOCAL RA</td>
+        <td>&lt;numeric child identifier&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>NUMSECRETCHILDREN</td>
+        <td>No</td>
+        <td>LOCAL RA</td>
+        <td>&lt;number of childnodes which are NOT listed as
+        CHILD or PRIVATECHILD (i.e. their numerical values are
+        secret)&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>IDENTIFIER</td>
+        <td>No</td>
+        <td>SUPERIOR RA</td>
+        <td>&lt;identifier value, e.g. example&gt; &lt;numeric
+        child identifier, e.g. 999&gt;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>UNICODELABEL</td>
+        <td>No</td>
+        <td>SUPERIOR RA</td>
+        <td>&lt;Unicode label, e.g. ViaThinkSoft&gt; &lt;numeric
+        child identifier, e.g. 12345&gt;</td>
+        <td>[4]</td>
+    </tr>
+    <tr>
+        <td>FLAG-DRAFT</td>
+        <td>Yes, cannot be unset</td>
+        <td>SUPERIOR RA</td>
+        <td>&lt;numeric child identifier&gt;</td>
+        <td>[5]</td>
+    </tr>
+    <tr>
+        <td>FLAG-LEAF</td>
+        <td>Yes, cannot be unset</td>
+        <td>SUPERIOR RA</td>
+        <td>&lt;numeric child identifier&gt;</td>
+        <td>[6]</td>
+    </tr>
+</table>
+
+<p>Remarks:</p>
+
+<ol>
+    <li>Defines who may change the attribute for a given OID<br>
+        LOCAL = (Attributes the local RA can change by itself)<br>
+        SUPERIOR RA = (Attributes only the superior RA can change)</li>
+    <li>Zone location. There are 3 possibilities:<br>
+        A) URL where the zone informations of the child are
+        stored.<br>
+        <font color="#FF8000">?? should local file references be
+        accepted ???</font><br>
+        Relative urls shall be accepted.<br>
+        Please note: IDNs (Unicode domain name which needs to be
+        translated into punycode first) shall be accepted by the
+        client.<br>
+        FTP URLs shall be accepted.<br>
+        HTTPS MUST be accepted by the client. Only with HTTPS,
+        informations can be ensured authorative.<br>
+        Also note that the URL can be a simple TXT file or a PHP
+        script which generates the record files from a database
+        etc. This makes delegation pretty flexible.<br>
+        B) &quot;&lt;here&gt;&quot; (without quotes), if the zone
+        informations are stored in the same file<br>
+        C) &quot;&lt;none&gt;&quot; (without quotes) if no zone
+        exists yet resp. if the child is a leaf node. But if you want to set a RA, description or name, you have to create a zone for this OID, since the superior OID cannot define these attributes.</li>
+    <li>If the RA attribute is NOT set locally, it will be
+        INHERITED from the superior OID! This makes it very easy
+        for companies who have many OIDs. They only need to
+        change the RA for children they delegate to another
+        person/department.</li>
+    <li>It could be also an longarc definition, e.g. &quot;root
+        UNICODELABEL Example 2.999&quot;</li>
+    <li>(Idea by Daniel Marschall) This indicates that the OID is
+        a draft resp reserved. It can be removed or changed at
+        ANY TIME. An OID viewer/resolver SHOULD NOT DISPLAY DRAFT-OIDS.
+        THESE ENTRIES ARE USUALLY PRIVATE FOR THE OID RA, e.g.
+        when they draft some new software which is needing an
+        amount of OIDs. An draft OID usually just reserves the
+        OID from accidently getting overwritten by another OID.</li>
+    <li>(Like seen at oid-info.com) This indicates that the OID
+        is a leaf. A parser will stop searching for children,
+        resp. children are locked</li>
+    <li>Note that since the TXT file is publicly available
+        through HTTP(S), the RA contact information cannot be
+        made private. If you'd like to be private, just don't
+        enter your address. You can also e.g. publish a handle
+        number which can be used to contact you resp. a URL to an
+        online contact form.</li>
+</ol>
+
+<h2>EXAMPLE 1: USING OID PLUS FOR MANAGING THE WHOLE OID TREE AS
+AN ALTERNATIVE FOR ORS</h2>
+
+<p>Making ORS easier would mean:</p>
+
+<ul>
+    <li>People without an own nameserver could implement ORS (note
+        that nearly no public available DNS hosting company
+        allows customers to create NAPTR records!)</li>
+    <li>The easier, the faster it is implemented world wide</li>
+</ul>
+
+<p>In our example of an ORS-alternative, the resolution would start at https://root.ors.example.com/ with the entry "root". It does not matter if the first arc you want to resolve is an numeric identifier, or an alpha identifier or an non-numeric Unicode label.</p>
+
+<pre><strong>[OIDDB/0.1]</strong>
+
+<font color="#000080"># -------------------------
+# ROOT ZONE FILE WHICH DEFINES THE ATTRIBUTES OF THE OIDS 0, 1 AND 2 AS WELL AS LONGARCS
+# -------------------------</font>
+
+oid:	UNICODELABEL	ISO	0
+oid:	IDENTIFIER	iso	0
+oid:	DELEGATION	0	https://iso.example.com/zone_record.php?oid=0
+
+oid:	IDENTIFIER	itu-t	1
+oid:	IDENTIFIER	itu-r	1
+oid:	IDENTIFIER	ccitt	1
+oid:	DELEGATION	1	https://itu.example.com/zone_1.txt
+
+oid:	IDENTIFIER	joint-iso-itu-t	2
+oid:	IDENTIFIER	joint-iso-ccitt	2
+oid:	DELEGATION	2	&lt;here&gt;
+
+<font color="#000080"># Longarcs</font>
+oid:	UNICODELABEL	Example	2.999
+
+<font color="#000080"># -------------------------
+# ZONE FILE FOR OID &quot;2&quot;
+# -------------------------</font>
+
+oid:2	RA		&quot;RA information about Joint ISO/ITU-T&quot;
+oid:2	DELEGATION	999	&lt;here&gt;
+oid:2	FLAG-LEAF	999
+
+<font color="#000080"># -------------------------
+# ZONE FILE FOR OID &quot;2.999&quot;
+# -------------------------</font>
+
+oid:2.999	RA		&quot;None&quot;
+oid:2.999	NAME		&quot;Example OID&quot;
+oid:2.999	DESCRIPTION	&quot;This OID is used as example&quot;</pre>
+
+<h2>EXAMPLE 2: HOW A SMALL COMPANY WHICH OWNS THE OID 2.999.1.2.3
+COULD MANAGE ITS OID TREE WITH A SINGLE TXT FILE</h2>
+
+<p>They simply create this text file and tell &quot;OID Plus&quot;
+to use this textfile as root for displaying/querying everything.
+Also, the root OIDs have to be specified (2.999.1.2.3)</p>
+
+<pre><strong>[OIDDB/0.1]</strong>
+
+<font color="#000080"># -------------------------
+# ZONE 2.999.1.2.3</font>
+<font color="#000080"># -------------------------
+</font>
+oid:2.999.1.2.3	RA		&quot;My company&quot;
+oid:2.999.1.2.3	NAME		&quot;My company Root OID&quot;
+oid:2.999.1.2.3	DESCRIPTION	&quot;This is the OID 2.999.1.2.3 owned by My Company!&quot;
+oid:2.999.1.2.3	IDENTIFIER	four	4
+oid:2.999.1.2.3	IDENTIFIER	vier	4
+oid:2.999.1.2.3	IDENTIFIER	quattro	4
+oid:2.999.1.2.3	UNICODELABEL	FOUR	4
+oid:2.999.1.2.3	UNICODELABEL	VIER	4
+oid:2.999.1.2.3	UNICODELABEL	QUATTRO	4
+oid:2.999.1.2.3	DELEGATION	4	&lt;here&gt;
+oid:2.999.1.2.3	FLAG-LEAF	4
+oid:2.999.1.2.3	FLAG-DRAFT	4
+
+oid:2.999.1.2.3	PRIVATECHILD	5
+oid:2.999.1.2.3	PRIVATECHILD	6
+oid:2.999.1.2.3	PRIVATECHILD	7
+
+<font color="#000080"># There are 100 secret children, 3 private children (id 5, 6 and 7) and 1 public child (id 4), so 2.999.1.2.3 has 104 child nodes in total</font>
+oid:2.999.1.2.3	NUMSECRETCHILDREN 100
+
+<font color="#000080"># -------------------------
+# ZONE 2.999.1.2.3.4</font>
+<font color="#000080"># -------------------------
+</font>
+oid:2.999.1.2.3.4	NAME		&quot;Cup of tea&quot;
+oid:2.999.1.2.3.4	DESCRIPTION	&quot;This is the OID 2.999.1.2.3.4!&quot;</pre>
+
+<p>Beside "oid" there could be also other NIDs like e.g. "clsid" or "doi" which can be also delegated.
+Note that the attribute IDs, e.g. unicodelabel are dependent to the NID oid, e.g. the attribute "unicodelabel"
+should behave different on a oid than for a clsid.</p>
+
+<h2>More ideas / TODO</h2>
+
+<ul>
+    <li>Add more attributes. Research more use cases</li>
+    <li>Implement client &quot;OID Plus&quot; with real-world
+        example &quot;ViaThinkSoft RA&quot;</li>
+    <li>Attribute: Information how to obtain a child</li>
+    <li>Erweiterung um java-packagenamen auf die selbe weise zu
+        verwalten</li>
+    <li>Attributes as OIDs: vmd attribute? identified by attr-oid.
+        &quot;X&quot; am anfang bei fremden herstellern</li>
+	<li>Tool that checks the validity of everything (identifier, leaf status etc)</li>
+</ul>
+</body>
+</html>

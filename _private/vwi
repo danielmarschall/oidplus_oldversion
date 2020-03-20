@@ -1,0 +1,3 @@
+vwhois problem... es sollte 2 whois server von vts geben...
+das problem  ist, dass http://whois.viathinksoft.de/whois/oid:1.3.6.1.4.1.37476.1.9000 nicht das selbe zeigt, was ein anderer gwhois zeigen würde, weil der vts-whois-server die abfrage abfangen muss. man sieht nicht die gwhois header und footer von der umleitung auf :program|oid-plus .
+

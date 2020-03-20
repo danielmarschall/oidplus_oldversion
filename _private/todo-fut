@@ -1,0 +1,21 @@
+
+anzeigen der version, uhrzeit und ip adresse und datum der datenbestände
+
+verbose uuid information direkt anzeigen und nicht nur per webservice von vts?
+
+writing api
+
+ORS anbindung
+
+
+einen index und oid privat halten, z.b. dmx?
+
+eine oid, die nicht als basis gewertet wird,  aber infos z.b. asn-1 namen enthält?
+
+ein XT attribut, das ohne namens-präfix etwas hinzufügt, z.b. werte die bei jeder oid hinzukommen sollen?
+
+index(ipv6):                    2001:1af8:4100:a061:1::/112
+index(ipv6):                    2001:1af8:4100:a061:1::1337
+index(ipv6):                    2001:1af8:4100:a061:1::4041
+--> sollte der index-handler hier nicht die einzelnen indizes normalisieren?
+

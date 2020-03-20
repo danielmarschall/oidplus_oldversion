@@ -1,0 +1,24 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+# Macro MACRO_DOMAIN <domainname_without_tld> <tld> <status>
+*macro:MACRO_DOMAIN status:__3__
+*macro:MACRO_DOMAIN type:domain
+*macro:MACRO_DOMAIN domain:__1__.__2__
+*macro:MACRO_DOMAIN identifier:__1__
+*macro:MACRO_DOMAIN index(domain):__1__.__2__.
+
+# Macro PRICE_PROSITE_DE
+*macro:PRICE_PROSITE_DE price(eur/month):0.39
+*macro:PRICE_PROSITE_DE price(eur/once):3.95
+
+# Macro MACRO_DOMAIN_PROSITE_DE <domainname_without_tld> <status>
+*macro:MACRO_DOMAIN_PROSITE_DE [xt]domain:MACRO_DOMAIN __1__ de __2__
+*macro:MACRO_DOMAIN_PROSITE_DE [xt]price:PRICE_PROSITE_DE
+
+# Macro PRICE_PROSITE_COM
+*macro:PRICE_PROSITE_COM price(eur/month):0.75
+*macro:PRICE_PROSITE_COM price(eur/once):9.90
+
+# Macro MACRO_DOMAIN_PROSITE_COM <domainname_without_tld> <status>
+*macro:MACRO_DOMAIN_PROSITE_COM [xt]domain:MACRO_DOMAIN __1__ com __2__
+*macro:MACRO_DOMAIN_PROSITE_COM [xt]price:PRICE_PROSITE_COM

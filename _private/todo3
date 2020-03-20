@@ -1,0 +1,33 @@
+
+packagename searchprovider (inverted domain searchprovider)
+
+
+
+uuid <a> links überschneiden sich bei index page
+
+
+
+  .2.25.91508361227511054614958357830529945354 91508361227511054614958357830529945354
+	-> das sieht verwirrend aus
+
+
+
+wenn kein searchprovider und kein index vorliegt, dann trotzdem gucken, ob eine uuid oid den berechneten namespace hat?
+	(uuid oid wurde per hand erstellt und der ersteller hat vergessen den index zu setzen)
+
+
+
+
+
+
+2/listAllOIDs ist redundant? 1/getAllOIDs geht auch
+
+
+searchprovider
+	highlighter for all kinds of indexes!
+	erlauben, eine baumstruktur/sortierung (ipv6!) zu erstellen
+	(zuerst wird aber von VolcanoDB nach NID sortiert!)
+
+
+bei jeder oid die source anzeigen, in der sie definiert wurde?
+

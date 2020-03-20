@@ -1,0 +1,35 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.9000.58.1                      identifier:amatch
+oid:.1.3.6.1.4.1.37476.9000.58.1                      description:Artist-Commissioner Matching Algorithms
+
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    identifier:offerAndRequest
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:Offer and Request matching object
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:Requestors (usually commissioners) and offerors (usually artists) share this object.
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:The object contains things like type of artwork, classification and price.
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:The subordinate OIDs have the name r{n}({n}) where {n} stands for the revision.
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:If an additional ".0" is attached, it denotes that it is a "WIP" (Work-In-Progress) variant of the denotes revision.
+oid:.1.3.6.1.4.1.37476.9000.58.1.1                    description:Example: {r1(1) 0} is "Revision 1 WIP" and {r(1)} is "Revision 1 Final".
+
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    identifier:artist
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:Artist
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:This object describes an offeror (usually an artist).
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:The subordinate OIDs have the name r{n}({n}) where {n} stands for the revision.
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:If an additional ".0" is attached, it denotes that it is a "WIP" (Work-In-Progress) variant of the denotes revision.
+oid:.1.3.6.1.4.1.37476.9000.58.1.2                    description:Example: {r1(1) 0} is "Revision 1 WIP" and {r(1)} is "Revision 1 Final".
+
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    identifier:commissioner
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:Commissioner
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:This object describes an requestor (usually a commissioner).
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:The subordinate OIDs have the name r{n}({n}) where {n} stands for the revision.
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:If an additional ".0" is attached, it denotes that it is a "WIP" (Work-In-Progress) variant of the denotes revision.
+oid:.1.3.6.1.4.1.37476.9000.58.1.3                    description:Example: {r1(1) 0} is "Revision 1 WIP" and {r(1)} is "Revision 1 Final".
+
+oid:.1.3.6.1.4.1.37476.9000.58.2  identifier:art-protect
+

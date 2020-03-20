@@ -1,0 +1,183 @@
+invisible oids, anstelle nur read [co] . "read" umbenennen in co
+
+oid+
+	ra(1) überschreibt ra(2) ?
+	alle generierten oids sollen unter einer bestimmten wurzel erstellt werden
+	den asn.1 pfad anklickbar machen (breadcrump)
+
+
+einen index wie z.b. dmx.com privat halten?
+	wird es dann trotzdem im index listing angezeigt?
+	wie kann man einen index privat halten, der automatisch erstellt wird?
+	einen auth-code, der es erst ermöglicht eine oid sichtbar zu machen... und was ist, wenn man die oid direkt anspricht?
+
+
+https://www.viathinksoft.de/~daniel-marschall/oid-plus/?action=roots
+	braucht 10 sekunden
+	-> die anfragen für jede root sollten paralell gestellt werden
+	-> indexes in einem lokalen root zusammenfassen
+
+
+default RA = unknown?
+
+ipv4 field-extender soll rev dns zeigen
+
+
+
+
+ViaThinkSoft Main IPv4
+ViaThinkSoft Backup IPv4
+ViaThinkSoft Main IPv6
+ViaThinkSoft Backup IPv6
+Address not in usage
+domain:         [[HDL]]
+owner-c:        VTS-DAM
+admin-c:        VTS-AFRAID
+tech-c:         VTS-AFRAID
+zone-c:         VTS-AFRAID
+billing-c:      VTS-AFRAID
+hosting-c:      VTS-VNE
+nameserver:     ns1.afraid.org # inherited
+nameserver:     ns2.afraid.org # inherited
+nameserver:     ns3.afraid.org # inherited
+nameserver:     ns4.afraid.org # inherited
+status:         delegated subdomain
+created:        unknown
+expires:        never
+
+[[INCLUDE:VTS-DAM]]
+[[INCLUDE:VTS-VNE]]
+[[INCLUDE:VTS-AFRAID]]
+domain:         [[HDL]]
+owner-c:        VTS-KDR
+admin-c:        VTS-DAM
+tech-c:         VTS-DAM
+zone-c:         VTS-DAM
+billing-c:      VTS-DAM
+hosting-c:      VTS-VNE
+nameserver:     ns11.prosite.de # inherited
+nameserver:     ns12.prosite.de # inherited
+status:         delegated subdomain
+created:        unknown
+expires:        never
+
+[[INCLUDE:VTS-KDR]]
+[[INCLUDE:VTS-VNE]]
+[[INCLUDE:VTS-DAM]]
+cat: vts-specific/priv: Ist ein Verzeichnis
+domain:         rez.example.com
+owner-c:        VTS-REZ
+admin-c:        VTS-DAM
+tech-c:         VTS-DAM
+zone-c:         VTS-DAM
+billing-c:      VTS-DAM
+hosting-c:      VTS-VNE
+nameserver:     ns11.prosite.de # inherited
+nameserver:     ns12.prosite.de # inherited
+status:         delegated subdomain
+created:        unknown
+expires:        never
+
+[[INCLUDE:VTS-REZ]]
+[[INCLUDE:VTS-VNE]]
+[[INCLUDE:VTS-DAM]]
+comment:This subdomain is a DNS subdomain from freedns.afraid.org
+
+person:         Daniel Marschall
+org-name:       ViaThinkSoft
+address:        Example street 1
+address:        Example town
+country:        DE
+phone:          +49 1234 5678
+fax-no:         -
+e-mail:         daniel-marschall@example.com
+
+person:         Kevin
+org-name:       -
+address:        Example street 1
+address:        Example town
+country:        PH
+phone:          +63 1234 5678
+fax-no:         -
+e-mail:         kevin@example.com
+
+person:         (rez)
+org-name:       -
+address:        ???
+country:        PL
+phone:          -
+fax-no:         -
+e-mail:         ???
+
+person:         Victor-Philipp Negoescu
+org-name:       ViaThinkSoft
+address:        Example street 2
+address:        Example town
+country:        DE
+phone:          +49 1234 5678
+fax-no:         -
+e-mail:         victor@example.com
+
+
+
+2001:1af8:4100:a061:1::
+
+
+
+095.211.038.042
+095.211.038.108
+
+
+
+
+
+einen abstand zwischen "search-result" und den daten? und zwischen den daten und "superior-node" ?
+
+
+
+
+indexprovider
+	auch zusätzliche sachen, z.b.
+		uuid soll auch abfragen von vts-uuid-infos
+		oder bei doi soll ein link eingeblendet werden zum doi server
+	highlighting von htmlFormat() um den link im fließtext zu erzeugen (default: nix)
+	sortierung innerhalb der nid, nachdem nid bereits von core sortiert wurde
+
+
+
+
+
+OID .2.999.1
+---
+Executed query oidplus:.2.999.1
+---
+oid:                  .2.999.1
+oid-depth:            3
+der-encoding:         06 03 88 37 01
+namebased-uuid-sha1:  660722ff-71b0-5662-9dbc-2bba2afe8a0f
+namebased-uuid-md5:   248b7ac5-48ef-3c24-1a48-58319a91ea2e
+asn1-notation:        { 2 999 1 }
+iri-notation:         /2/999/1
+search-result:        Not found; Superior node found
+distance(oid):        1
+---
+oid:                  .2.999
+oid-depth:            2
+der-encoding:         06 02 88 37
+namebased-uuid-sha1:  42e32fd6-fc81-5dff-99f7-89aec4c050e1
+namebased-uuid-md5:   2d6d9054-e42f-39c3-1d16-b064408d97a5
+cross-ref:            http://www.oid-info.com/get/2.999
+asn1-notation:        { 2 999 }
+iri-notation:         /2/999
+search-result:        Found
+name:                 test .3.0 xyz
+name:                 test 1.30 xyz
+name:                 test 1.49 xyz
+name:                 test .1.039 xyz
+name:                 test .1.040 xyz
+name:                 test .2.0999 xyz
+current-node:         .2.999 999
+child-node:           .2.999.1 1 [not described]
+====> hier fehlt oben ein child-node verweis auf 2.999.1
+--auch wird wahrscheinlich nicht auf xref geprüft?
+

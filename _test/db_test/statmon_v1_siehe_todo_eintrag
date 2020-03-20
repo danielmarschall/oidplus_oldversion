@@ -1,0 +1,78 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.2.1		[in]attribute:draft
+oid:.1.3.6.1.4.1.37476.2.1		identifier:statmon
+oid:.1.3.6.1.4.1.37476.2.1		identifier:statusmon
+oid:.1.3.6.1.4.1.37476.2.1                            attribute:draft
+oid:.1.3.6.1.4.1.37476.2.1                            identifier:statusmon
+oid:.1.3.6.1.4.1.37476.2.1                          identifier:statusMonitor
+oid:.1.3.6.1.4.1.37476.2.1                          unicodelabel:StatusMonitor
+oid:.1.3.6.1.4.1.37476.2.1                          description:ViaThinkSoft Status Monitor Communication Interface
+oid:.1.3.6.1.4.1.37476.2.1                          specification:http://www.viathinksoft.de/documents/specification/statusmon/
+oid:.1.3.6.1.4.1.37476.2.1                          allocated:daniel-marschall@viathinksoft.de 2011-03-22
+
+# --- Version 1
+
+oid:.1.3.6.1.4.1.37476.2.1.1	identifier:v1
+
+#oid:.1.3.6.1.4.1.37476.2.1.1.1		[in]*invisible:1
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        allocated:daniel-marschall@viathinksoft.de 2011-03-22
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        description:Monitor states
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        description:All child OIDs are leaf OIDs.
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        identifier:states
+#oid:.1.3.6.1.4.1.37476.2.1.1.1		[in]attribute:canceled
+# TODO: warum wird "draft" nicht weiter durchgeschleift?
+oid:.1.3.6.1.4.1.37476.2.1.1.1		[in]attribute:draft
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        maxdepth:1
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        todo:rename into state ?
+oid:.1.3.6.1.4.1.37476.2.1.1.1                        unicodelabel:States
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.1                      allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.1                      attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.1                      description:Everything is OK
+oid:.1.3.6.1.4.1.37476.2.1.1.1.1                      identifier:ok
+oid:.1.3.6.1.4.1.37476.2.1.1.1.1                      unicodelabel:OK
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.2                      allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.2                      attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.2                      description:A warning is thrown
+oid:.1.3.6.1.4.1.37476.2.1.1.1.2                      identifier:warning
+oid:.1.3.6.1.4.1.37476.2.1.1.1.2                      unicodelabel:WARNING
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.3                      allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.3                      attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.3                      description:Severity of the state (0 = OK, >0 = Warning)
+oid:.1.3.6.1.4.1.37476.2.1.1.1.3                      identifier:severity
+oid:.1.3.6.1.4.1.37476.2.1.1.1.3                      unicodelabel:SEVERITY
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.4                      allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.4                      attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.4                      description:Notification when constant changes
+oid:.1.3.6.1.4.1.37476.2.1.1.1.4                      identifier:constant
+oid:.1.3.6.1.4.1.37476.2.1.1.1.4                      unicodelabel:CONSTANT
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.5                      allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.5                      attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.5                      description:A picture which has to be monitored visually
+oid:.1.3.6.1.4.1.37476.2.1.1.1.5                      identifier:picture
+oid:.1.3.6.1.4.1.37476.2.1.1.1.5                      unicodelabel:PICTURE
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.6                      allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.6                      attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.6                      description:Sends a message without changing the client monitor state
+oid:.1.3.6.1.4.1.37476.2.1.1.1.6                      identifier:message
+oid:.1.3.6.1.4.1.37476.2.1.1.1.6                      unicodelabel:MESSAGE
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.100                    allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.100                    attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.100                    description:A temporary internal error prevents the Status Monitor to provide the current state of the service. This error is equivalent to a HTTP 500 response.
+oid:.1.3.6.1.4.1.37476.2.1.1.1.100                    description:ERROR_INTERNAL [text (optional)]
+oid:.1.3.6.1.4.1.37476.2.1.1.1.100                    identifier:error-internal
+oid:.1.3.6.1.4.1.37476.2.1.1.1.100                    unicodelabel:ERROR_INTERNAL
+
+oid:.1.3.6.1.4.1.37476.2.1.1.1.101                    allocated:daniel-marschall@viathinksoft.de 2011-03-26
+oid:.1.3.6.1.4.1.37476.2.1.1.1.101                    attribute:LEAF
+oid:.1.3.6.1.4.1.37476.2.1.1.1.101                    description:ERROR_ARGUMENTS [text (optional)]
+oid:.1.3.6.1.4.1.37476.2.1.1.1.101                    description:This error indicates that the client has provided illegal arguments (= GET parameters) to the Status Monitor.
+oid:.1.3.6.1.4.1.37476.2.1.1.1.101                    identifier:error-arguments
+oid:.1.3.6.1.4.1.37476.2.1.1.1.101                    unicodelabel:ERROR_ARGUMENTS

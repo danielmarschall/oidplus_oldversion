@@ -1,0 +1,231 @@
+
+man soll eine zeile auch so auskommentieren dürfen:
+	2.999	#name:xyz
+	anstelle
+	#2.999	name:xyz
+
+funktioniert draft[in] ?
+
+Die VTS OID+ datenbank proof read
+
+[co] OIDs automatisch NOEXPORT
+
+confidential
+... können ganze OIDs verschwinden? (nein)
+... kann man den identifier unsichtbar machen für die öffentlichkeit?
+
+markieren der informationen, die durch authcode sichtbar wurden?
+
+
+das ist bloed: man kann mit dem token zwar ueber whois kevin.example.com sehen (den index), aber eben auch alle meine persoenlichen daten!
+	auch in allen anderen OIDs ist nun mein voller name zu sehen!
+
+
+Executed query uuid:www.kevin.example.com.
+searchterm:     www.kevin.example.com.
+search-result:  No exact match and no superior node was found
+--> hier sollte man vielleicht sagen, dass der searchterm nicht gefunden wurde, unter der bedingung
+    a) namespace "uuid"
+    b) unter dem aktuellen credentials
+
+oid zeile: wenn kein asn1 id, dann den lastarc nicht wiederholen. außerdem eine zeile mit "name" oder "index" dahinter anzeigen
+
+erkennen, ob ipv4, ipv6 etc, und dann automatisch den prefix "ipv4" etc verwenden --> 95.211.38.42 dann möglich
+
+automatischen tree/browsing für indexes, z.b. browsing von /128 auf /112 möglich, da dieses hierarchie nicht in OIDs stattfindet
+
+
+die ausgabe von listall ist viel zu breit, wegen den automatisch generierten oids
+
+ipv6:2001:1af8:4100:a061:1::4041/129
+-- als illegal erkennen
+
+funktioniert die suche, wenn man /127 sucht, und /112 existiert?
+ipv6:2001:1af8:4100:a061:1::4041/127 geht
+oidplus:2001:1af8:4100:a061:1::4041/127 geht nicht
+--> ja, aber nur bei "ipv6:" prefix
+
+bei ipv4/6 muss es eine möglichkeit geben, den baum nicht nur aus sicht der OIDs wiederzugeben, sondern auch aus sicht der NS-elemente (z.b. 112 -> 128)
+
+es soll möglich sein, z.b. für OID "." lese oder RA-rechte zu setzen, ohne diese OID aber zu definieren (sodass es nicht als root auftaucht)
+
+man soll dinge als macro einbauen können (z.b. rechte), ohne hierfür einen namen zu vergeben (also sie unsichtbar zu halten)
+
+
+
+
+
+doi fieldextenders auch , wenn eine oid manuell angelegt wurde und ein index(doi) besitzt
+
+
+
+kÃ¶nnte auch [el]ra(1) mÃ¶glich sein, um nur RA#1 zu entfernen?
+
+
+
+&action=uuid_info
+--> als query machbar?
+--> wird das auch eine 2.25 oid finden, wenn diese kein index(uuid) hat?
+
+! uuid nie als index linken, sondern immer als uuid_info
+
+bei einer NIC darf man nicht jede domain sehen!
+--> reicht es den index zu indizieren, oder besser die ganze domain?
+
+
+
+
+gibt es hidden oids, die vorhanden sind, wenn man sie aufruft, aber sonst nicht sichtbar sind?
+-- auch nicht per index etc, aber man kann den index eingeben!
+-- das wäre dann für die domains gut
+oder eventuell erst sichtbar bei passwort?
+
+
+doi: in wie fern soll man eine hierarchie einbauen? ist 10.1000/abc/def überhaupt erlaubt?
+
+
+index(xyz) außerhalb des markierten "-----" verschieben, sodass man ihn wegparsen kann bei vwi
+
+plugins/field_extenders/3_uuid.inc.php
+-> zu jedem namebased soll ein index erstellt werden
+	aber dieser index soll unsichtbar sein! sonst wird die indexliste zugespamt!
+	es geht aber nicht, da nur indexes gefunden werden, die in der DB stehen
+	folglich kann man die uuid immer noch nicht per commandline abfragen
+
+
+
+listall: anstelle so einen riesigen tree anzuzeigen, lieber einzelne roots anzeigen, und von dort aus dann eben den baum aufbauen
+
+
+hier funktioniert superior: http://www.viathinksoft.de/~daniel-marschall/oid-plus/?action=show_index&index=10.1000/184/4
+hier nicht: http://www.viathinksoft.de/~daniel-marschall/oid-plus/?action=show_index&index=10.1000/1844
+--> aber es gibt 10.1000 !
+--> aber es ist kein index(doi) ... info: es gibt auch '/'
+
+
+
+wenn ich uuid:5831ae7e-de3c-3f92-14c6-7c32eb03b138 eingebe, komme ich nicht zu oid:.1.3.6.1.4.1.37476.30.1
+	wenn ich es aber im webinterface anklicke, geht es (also über ?action=uuid_info)
+	-> also müsste jede oid noch generierte indexes bekommen @v@
+
+
+
+
+kann man bei der doi:10.9999/1234 suche auch auf den arc von 10.9999 zurückspringen, wenn es 1234 nicht gibt?
+
+wenn kein identifier da, dann die erste zeile description rausholen im navigations-abschnitt
+noscript emails
+
+
+
+dois in einem richtigen stamm haben!
+<stamm>.<doi root>.<uuidd>
+
+
+
+http://whois.viathinksoft.de/whois/kevin.example.com
+--> über oid lösen, aber dann eben die oid infos filtern
+--> auch personal.txt soll dann drinstehen
+--> die indexes müssen natürlich auch privat sein
+--> information objects, also 1 OID = 1 whois datensatz, ohne uuid
+
+oid hidden, aber sichtbar bei direktem aufruf?
+
+api für das aufrufen von außen (mit keyphrase)
+api zum überprüfen, ob es eine oid direkt gibt (für vts whois)
+
+oid export script. iterieren und bei allen gucken ob sie veröffentlicht werden dürfen
+
+alle oids von vts prüfen!
+
+
+
+
+
+viele dinge konfigurirerbar machen
+
+die ganzen field-extended sachen sehen viel zu kompliziert aus!!!
+	die eigenen angaben bitte fett hervorheben!
+
+eine nicht-existierende oid
+	soll auch superior-current-child navigation haben
+
+sollte die index oids nochmal aufgesplittet werden in <nid> -> <identifier> ?
+
+
+DRAFT oids ausblendbar ueber web api
+
+kann man bei der vererbung von attributen einfach ein neues attribut hinzunehmen? (OR-verknüpfung von flags?)
+
+write api
+
+kann ein description field eingerückt werden?
+
+.2.12.3.4.5.6 6 -- ist schlecht lesbar. besser .2.12.3.4.5.6 <no identifier>(6)
+
+alles übersetzbar machen
+
+arsch langsam
+
+<http://...> wird als url erkannt
+
+---
+
+oid+: "ra(1)-name" soll "ra" Überschreiben. man muss dafür nicht extra ein macro schreiben
+
+---
+
+:M_FREEOID [xt]ra(1):M_FREEOID __1__ __6__
+Macro 'M_FREEOID' not found at ./db/xxx.db at line 8
+
+---
+
+Geht nicht (transitive Überschreibung von "ra"):
+	:M_FREEOID_RA ??-name:__1__
+	:M_FREEOID ra(1)[in][xt]:M_FREEOID_RA __1__
+	.1.3.6.1.4.1.37476.1234 [xt]entry:M_FREEOID info@daniel-marschall.de
+Geht:
+	:M_FREEOID_RA ??-name:__1__
+	.1.3.6.1.4.1.37476.1234 [xt]entry:M_FREEOID info@daniel-marschall.de
+	.1.3.6.1.4.1.37476.1234 [xt]ra:M_FREEOID_RA info@daniel-marschall.de
+
+---
+
+cache / performance
+
+OIDRA
+	BUG IN OIDRA LEGACY: werte sind mit sortiert!!! description: alles durcheinander
+	volcano oid assign
+	oid 9000: sint32
+	oid 40: statmon-private
+	upperlimit, message-typen, asn1-module für statmon
+	statmon.db
+vts oidra alles prÃ¼fen und pub
+
+whois header der immer angezeigt wird (.txt) file
+
+asn.1 notation, IRI notation
+
+anzahl von child oids anzeigen
+
+ALAS antispam
+
+zeilenumbruch trotz <pre>, aber einrückung behalten -- geht nur mit <table>?
+
+!! draft erkennung
+
+oid:... syntax (mit/ohne leading dot)
+# --> implement in gwhois + vwhois
+
+FT XML export
+	aber ohne .2.25 und ohne genroot . auch leaf und frozen beachten
+
+source: hinzufügen
+whois + fußzeile + kopfzeile(Txt)
+
+eine oid, die nur [co] hat, existiert angeblich nicht -- nicht gut
+
+performance
+
+sieht nicht so schön aus wie oidinfo
+

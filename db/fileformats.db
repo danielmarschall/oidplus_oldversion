@@ -1,0 +1,145 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.3.1.5                          identifier:oid-illegality-rules
+oid:.1.3.6.1.4.1.37476.3.1.5                          description:"Illegality rules" file format
+oid:.1.3.6.1.4.1.37476.3.1.5                          information:Stores information about OIDs which were misdefined or otherwise invalid.
+oid:.1.3.6.1.4.1.37476.3.1.5                          information:This file format was introduced by the OID Info Application Programming Interface (API) in the programming language PHP ( https://www.viathinksoft.de/~daniel-marschall/oid-repository/api/ ).
+
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        identifier:v1
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        description: Version 1
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        information: Syntax:
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        information: -- comment    : comments are also allowed after a rule definition
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        information: 2.999.(11-).0 : the arc values 11 and below are illegal
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        information: 2.999.(11+).0 : the arc values 11 and above are illegal
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        information: 2.999.(1-5).0 : the arc values 1 to 5 are illegal
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        information: 2.999.*.0     : * is equal to (0+)
+oid:.1.3.6.1.4.1.37476.3.1.5.1                        attribute:leaf
+
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        identifier:v2
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        description: Version 2
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: Syntax:
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: -- comment    : comments are also allowed after a rule definition
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: 2.999.(11-).0 : the arc values 11 and below are illegal
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: 2.999.(11+).0 : the arc values 11 and above are illegal
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: 2.999.(1-5).0 : the arc values 1 to 5 are illegal
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: 2.999.*.0     : * is equal to (0+)
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        information: 2.999.(!3).0  : only arc 3 is valid, all others are invalid (added in version 2)
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        attribute:leaf
+oid:.1.3.6.1.4.1.37476.3.1.5.2                        assigned:2018-09-20
+
+# ---
+
+oid:.1.3.6.1.4.1.37476.3.1.3                          attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3                          identifier:vmd
+
+oid:.1.3.6.1.4.1.37476.3.1.3.0                        attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.0                        identifier:format
+
+oid:.1.3.6.1.4.1.37476.3.1.3.0.0                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.0.0                      identifier:v0
+
+#TODO: Diesen arc löschen!
+oid:.1.3.6.1.4.1.37476.3.1.3.1                        attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.1                        identifier:general-obsolete
+oid:.1.3.6.1.4.1.37476.3.1.3.1                        [in]*invisible:1
+oid:.1.3.6.1.4.1.37476.3.1.3.1                        attribute:deprecated
+
+oid:.1.3.6.1.4.1.37476.3.1.3.1.1                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.1.1                      identifier:superiorcontainerid
+
+oid:.1.3.6.1.4.1.37476.3.1.3.1.1.0                    attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.1.1.0                    identifier:none
+
+oid:.1.3.6.1.4.1.37476.3.1.3.1.2                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.1.2                      identifier:namevaluepair
+
+oid:.1.3.6.1.4.1.37476.3.1.3.1.2.0                    attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.1.2.0                    identifier:name
+
+oid:.1.3.6.1.4.1.37476.3.1.3.1.2.1                    attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.1.2.1                    identifier:value
+
+oid:.1.3.6.1.4.1.37476.3.1.3.2                        attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.2                        identifier:nodes
+
+oid:.1.3.6.1.4.1.37476.3.1.3.2.0                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.2.0                      identifier:universe
+
+# TODO: VTS specific metatags!!! verschieben nach VTS!
+oid:.1.3.6.1.4.1.37476.3.1.3.3                        attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3                        identifier:metatags
+
+oid:.1.3.6.1.4.1.37476.3.1.3.3.1                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3.1                      identifier:format
+
+oid:.1.3.6.1.4.1.37476.3.1.3.3.2                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3.2                      identifier:uuid
+
+oid:.1.3.6.1.4.1.37476.3.1.3.3.3                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3.3                      identifier:user
+
+oid:.1.3.6.1.4.1.37476.3.1.3.3.4                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3.4                      identifier:creationTime
+
+oid:.1.3.6.1.4.1.37476.3.1.3.3.5                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3.5                      identifier:modificationTime
+
+oid:.1.3.6.1.4.1.37476.3.1.3.3.6                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.3.6                      identifier:lastAccessTime
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4                        attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4                        identifier:format
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.0                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.0                      identifier:special
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.0.1                    attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.0.1                    identifier:childnode
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.0.2                    attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.0.2                    identifier:childNodeFileReference
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.1                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.1                      identifier:string
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.2                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.2                      identifier:number
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.3                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.3                      identifier:boolean
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.4                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.4                      identifier:date
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.5                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.5                      identifier:time
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.6                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.6                      identifier:datetime
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.7                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.7                      identifier:float
+
+oid:.1.3.6.1.4.1.37476.3.1.3.4.8                      attribute:draft
+oid:.1.3.6.1.4.1.37476.3.1.3.4.8                      identifier:oid
+
+# ---
+
+oid:.1.3.6.1.4.1.37476.2.5                          identifier:oidplus
+oid:.1.3.6.1.4.1.37476.2.5                          description:OIDplus
+
+oid:.1.3.6.1.4.1.37476.2.5.1                          identifier:v1
+oid:.1.3.6.1.4.1.37476.2.5.1                          description:Version 1
+
+oid:.1.3.6.1.4.1.37476.2.5.1.1                          identifier:volcano
+oid:.1.3.6.1.4.1.37476.2.5.1.1                          description:Volcano file format
+oid:.1.3.6.1.4.1.37476.2.5.1.1                          information:This file format is used as OID database format for ViaThinkSoft OID+
+
+oid:.1.3.6.1.4.1.37476.2.5.1.1.1                        identifier:v1
+oid:.1.3.6.1.4.1.37476.2.5.1.1.1                        description:Volcano file format, Version 1
+oid:.1.3.6.1.4.1.37476.2.5.1.1.1                        attribute:leaf
+
+oid:.1.3.6.1.4.1.37476.2.5.1.1.2                        identifier:v2
+oid:.1.3.6.1.4.1.37476.2.5.1.1.2                        description:Volcano file format, Version 2
+oid:.1.3.6.1.4.1.37476.2.5.1.1.2                        attribute:leaf
+

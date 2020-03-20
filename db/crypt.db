@@ -1,0 +1,9 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.3.2.2.99                       identifier:foreign
+oid:.1.3.6.1.4.1.37476.3.2.2.99                       unicodelabel:Foreign
+oid:.1.3.6.1.4.1.37476.3.2.2.99                       description:Encryption algorithms by other vendors.
+oid:.1.3.6.1.4.1.37476.3.2.2.99                       information:This arc maps these algorithms in the OID tree.
+oid:.1.3.6.1.4.1.37476.3.2.2.99                       information:The purpose is to use these OIDs to identify algorithms, if an OID is necessary.
+oid:.1.3.6.1.4.1.37476.3.2.2.99                       allocated:daniel-marschall@viathinksoft.de 2014-11-28
+

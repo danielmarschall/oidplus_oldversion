@@ -1,0 +1,12 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.3.4.1                          identifier:pyrascript
+oid:.1.3.6.1.4.1.37476.3.4.1                          unicodelabel:PyraScript
+oid:.1.3.6.1.4.1.37476.3.4.1                          description:PyraScript
+oid:.1.3.6.1.4.1.37476.3.4.1                          allocated:daniel-marschall@viathinksoft.de 2018-07-14
+
+oid:.1.3.6.1.4.1.37476.3.4.1.1408                     identifier:pyrascript
+oid:.1.3.6.1.4.1.37476.3.4.1.1408                     unicodelabel:PyraScript
+oid:.1.3.6.1.4.1.37476.3.4.1.1408                     description:PyraScript implementation of August 2014
+oid:.1.3.6.1.4.1.37476.3.4.1.1408                     allocated:daniel-marschall@viathinksoft.de 2018-07-14
+oid:.1.3.6.1.4.1.37476.3.4.1.1408                     attribute:leaf

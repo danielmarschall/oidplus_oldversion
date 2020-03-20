@@ -1,0 +1,122 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476                                [in]*read-auth(plain):passwort123
+#oid:.1.3.6.1.4.1.37476                               [in]*write-auth(false)
+
+#oid:.1.3.6.1.4.1.37476                               identifier:viathinksoft
+#oid:.1.3.6.1.4.1.37476                               unicodelabel:ViaThinkSoft
+
+oid:.1.3.6.1.4.1.37476                                name:ViaThinkSoft Root OID
+oid:.1.3.6.1.4.1.37476                                description:ViaThinkSoft (German https://www.viathinksoft.de/ or English https://www.viathinksoft.com/ )
+oid:.1.3.6.1.4.1.37476                                description:More information about assigned OIDs: https://www.viathinksoft.de/documents/oid/
+
+oid:.1.3.6.1.4.1.37476                                ra(1)[in][xt]:C_VTS
+
+oid:.1.3.6.1.4.1.37476                                policy(1):Please see the Memorandum about ViaThinkSoft's OID tree
+oid:.1.3.6.1.4.1.37476                                policy(1):https://www.viathinksoft.de/documents/oid/advisory/
+
+oid:.1.3.6.1.4.1.37476                                allocated:iana-pen@iana.org 2011-02-25
+oid:.1.3.6.1.4.1.37476                                asn1-notation: {iso(1) identified-organization(3) dod(6) internet(1) private(4) enterprise(1) 37476}
+oid:.1.3.6.1.4.1.37476                                iri-notation: /ISO/Identified-Organization/6/1/4/1/37476
+
+# ---
+
+oid:.1.3.6.1.4.1.37476.2                              identifier:products
+oid:.1.3.6.1.4.1.37476.2                              unicodelabel:Products
+oid:.1.3.6.1.4.1.37476.2                              description:Products
+oid:.1.3.6.1.4.1.37476.2                              allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.3                              allocated:daniel-marschall@viathinksoft.de 2011-03-14
+oid:.1.3.6.1.4.1.37476.3                              description:Specifications
+oid:.1.3.6.1.4.1.37476.3                              identifier:specifications
+oid:.1.3.6.1.4.1.37476.3                              unicodelabel:Specifications
+
+oid:.1.3.6.1.4.1.37476.3.0                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+oid:.1.3.6.1.4.1.37476.3.0                            description:Other specifications (not referenced by brother OIDs)
+oid:.1.3.6.1.4.1.37476.3.0                            identifier:misc
+oid:.1.3.6.1.4.1.37476.3.0                            unicodelabel:Misc
+
+oid:.1.3.6.1.4.1.37476.3.1                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+oid:.1.3.6.1.4.1.37476.3.1                            description:File formats
+oid:.1.3.6.1.4.1.37476.3.1                            identifier:fileformat
+oid:.1.3.6.1.4.1.37476.3.1                            unicodelabel:FileFormat
+
+oid:.1.3.6.1.4.1.37476.3.2                            identifier:algorithm
+oid:.1.3.6.1.4.1.37476.3.2                            unicodelabel:Algorithm
+oid:.1.3.6.1.4.1.37476.3.2                            description:Algorithms
+oid:.1.3.6.1.4.1.37476.3.2                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.3.2.1                          identifier:hash
+oid:.1.3.6.1.4.1.37476.3.2.1                          unicodelabel:Hash
+oid:.1.3.6.1.4.1.37476.3.2.1                          description:Specific hash algorithms
+oid:.1.3.6.1.4.1.37476.3.2.1                          allocated:daniel-marschall@viathinksoft.de 2011-07-23
+
+oid:.1.3.6.1.4.1.37476.3.2.2                          identifier:crypt
+oid:.1.3.6.1.4.1.37476.3.2.2                          unicodelabel:Crypt
+oid:.1.3.6.1.4.1.37476.3.2.2                          description:Crypt algorithms
+oid:.1.3.6.1.4.1.37476.3.2.2                          allocated:daniel-marschall@viathinksoft.de 2011-11-07
+
+oid:.1.3.6.1.4.1.37476.3.2.3                          identifier:encoding
+oid:.1.3.6.1.4.1.37476.3.2.3                          unicodelabel:Encoding
+oid:.1.3.6.1.4.1.37476.3.2.3                          description:Encoding algorithms
+oid:.1.3.6.1.4.1.37476.3.2.3                          allocated:daniel-marschall@viathinksoft.de 2014-12-09
+
+oid:.1.3.6.1.4.1.37476.3.3                            identifier:interface
+oid:.1.3.6.1.4.1.37476.3.3                            unicodelabel:Interface
+oid:.1.3.6.1.4.1.37476.3.3                            description:Interfaces
+oid:.1.3.6.1.4.1.37476.3.3                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.3.4                            identifier:script
+oid:.1.3.6.1.4.1.37476.3.4                            unicodelabel:Script
+oid:.1.3.6.1.4.1.37476.3.4                            description:Individual script languages and notations
+oid:.1.3.6.1.4.1.37476.3.4                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.3.5                            identifier:communication
+oid:.1.3.6.1.4.1.37476.3.5                            unicodelabel:Communication
+oid:.1.3.6.1.4.1.37476.3.5                            description:Communication interfaces
+oid:.1.3.6.1.4.1.37476.3.5                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.3.6                            identifier:protocol
+oid:.1.3.6.1.4.1.37476.3.6                            unicodelabel:Protocol
+oid:.1.3.6.1.4.1.37476.3.6                            description:Individual protocols
+oid:.1.3.6.1.4.1.37476.3.6                            allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.4                              identifier:experimental
+oid:.1.3.6.1.4.1.37476.4                              unicodelabel:Experimental
+oid:.1.3.6.1.4.1.37476.4                              description:Objects in experimental implementations
+oid:.1.3.6.1.4.1.37476.4                              allocated:daniel-marschall@viathinksoft.de 2011-03-14
+
+oid:.1.3.6.1.4.1.37476.10                             identifier:ca
+oid:.1.3.6.1.4.1.37476.10                             unicodelabel:CA
+oid:.1.3.6.1.4.1.37476.10                             description:Reserved for future use in X.509 certificates.
+oid:.1.3.6.1.4.1.37476.10                             attribute:RESERVED
+oid:.1.3.6.1.4.1.37476.10                             allocated:daniel-marschall@viathinksoft.de 2014-11-08
+
+oid:.1.3.6.1.4.1.37476.20                             identifier:multidump
+oid:.1.3.6.1.4.1.37476.20                             identifier:vmd
+oid:.1.3.6.1.4.1.37476.20                             unicodelabel:Multidump
+oid:.1.3.6.1.4.1.37476.20                             description:ViaThinkSoft Multidump (an experimental format for interoperation between open systems)
+oid:.1.3.6.1.4.1.37476.20                             information:Multidump is completely built out of object identifiers. Every possible field or module is represented by an OID arc. Third-party vendors may use their own OID arcs for their extensions. This arc is used for data structures for ViaThinkSoft products.
+oid:.1.3.6.1.4.1.37476.20                             specification:https://www.viathinksoft.de/documents/specification/multidump/
+oid:.1.3.6.1.4.1.37476.20                             allocated:daniel-marschall@viathinksoft.de 2011-07-17
+
+oid:.1.3.6.1.4.1.37476.30                             identifier:oidplus
+oid:.1.3.6.1.4.1.37476.30                             unicodelabel:OIDplus
+oid:.1.3.6.1.4.1.37476.30                             description:ViaThinkSoft OID+ Information Objects
+oid:.1.3.6.1.4.1.37476.30                             information:This arc maps information objects of ViaThinkSoft's internal managment (domain managment, IP network managment, GUIDs, package names, document numbering, etc)  to the OID tree so that the informations can be embedded to the software ViaThinkSoft OID+.
+oid:.1.3.6.1.4.1.37476.30                             information:Informations can be queried with a whois client, but usually most of the information objects are for private use only and require a personal identifcation number (PIN).
+oid:.1.3.6.1.4.1.37476.30                             allocated:daniel-marschall@viathinksoft.de 2012-06-26
+
+oid:.1.3.6.1.4.1.37476.30.3                           identifier:genroot
+oid:.1.3.6.1.4.1.37476.30.3                           unicodelabel:GenRoot
+
+oid:.1.3.6.1.4.1.37476.9999                           identifier:example
+oid:.1.3.6.1.4.1.37476.9999                           unicodelabel:Example
+oid:.1.3.6.1.4.1.37476.9999                           description:Example
+oid:.1.3.6.1.4.1.37476.9999                           information:This is a free usable arc for everyone with the purpose of documenting examples of object identifiers in tutorial, open source demos, etc. (in the same way as "example.com" is used as an example for web sites). You can use this OID without any permission.
+oid:.1.3.6.1.4.1.37476.9999                           information:This OID is now deprecated in favor of {joint-iso-itu-t(2) example(999)}.
+oid:.1.3.6.1.4.1.37476.9999                           information:Since the ViaThinkSoft OID policies do not allow the re-allocation of an allocated OID, this arc will not be used for any other purpose.
+oid:.1.3.6.1.4.1.37476.9999                           specification:https://www.viathinksoft.de/documents/specification/example-oid/
+oid:.1.3.6.1.4.1.37476.9999                           attribute:DEPRECATED
+oid:.1.3.6.1.4.1.37476.9999                           ra:Anybody <anonymous@example.com>
+oid:.1.3.6.1.4.1.37476.9999                           allocated:daniel-marschall@viathinksoft.de 2011-04-18

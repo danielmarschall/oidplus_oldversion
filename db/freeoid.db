@@ -1,0 +1,14 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+oid:.1.3.6.1.4.1.37476.9000                           identifier:freeoid
+oid:.1.3.6.1.4.1.37476.9000                           identifier:freesub
+oid:.1.3.6.1.4.1.37476.9000                           unicodelabel:FreeOID
+oid:.1.3.6.1.4.1.37476.9000                           unicodelabel:FreeSub
+oid:.1.3.6.1.4.1.37476.9000                           description:This service is mainly intended to give private persons, small workgroups and
+oid:.1.3.6.1.4.1.37476.9000                           description:software developers of freeware, shareware or open-source software the possibility of
+oid:.1.3.6.1.4.1.37476.9000                           description:obtaining a free OID with minimum bureaucratic overhead.
+oid:.1.3.6.1.4.1.37476.9000                           description:See https://www.viathinksoft.de/freeoid/
+oid:.1.3.6.1.4.1.37476.9000                           allocated:daniel-marschall@viathinksoft.de 2011-03-14
+oid:.1.3.6.1.4.1.37476.9000                           changed:daniel-marschall@viathinksoft.de 2013-11-12
+
+#*external:https://www.viathinksoft.de/freeoid/interface/oidplus_plugin/

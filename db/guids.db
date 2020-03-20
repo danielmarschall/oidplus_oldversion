@@ -1,0 +1,21 @@
+[1.3.6.1.4.1.37476.2.5.1.1.2]
+
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 name:Namespace Universally Unique Identifier (UUID) for name-based UUIDs (as defined in IETF RFC 4122, clause 4.3) which describe identifiers which cannot be mapped to the OID tree.
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:The payload for a namebased UUID in this namespace is
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:"<namespace>:<identifier>", e.g. "isbn:978-3-16-148410-0"
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:The value of <namespace> can be chosen by the user and must be
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:converted into lower case. An Uniform Resource Name (URN) is preferred.
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:OID+ will convert these identifiers into a namebased UUID which 
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:will be converted into an UUID OID (beneath arc 2.25),
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:which can be listed by OID+. This process allows that every identifier
+uuid:ad1654e6-7e15-11e4-9ef6-78e3b5fc7f22 description:can be mapped into the OID tree.
+
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 name:Namespace Universally Unique Identifier (UUID) for namebased UUIDs (as defined in IETF RFC 4122, clause 4.3) which describe identifiers which cannot be mapped to the OID tree.
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:The payload for a namebased UUID in this namespace is
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:"<namespace>", e.g. "isbn"
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:The value of <namespace> can be chosen by the user and must be
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:converted into lower case. A common Uniform Resource Name (URN) namespace is preferred.
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:OID+ will convert these identifiers into a namebased UUID which
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:will be converted into an UUID OID (beneath arc 2.25),
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:which can be listed by OID+. This process allows that every identifier
+uuid:0943e3ce-4b79-11e5-b742-78e3b5fc7f22 description:can be mapped into the OID tree.

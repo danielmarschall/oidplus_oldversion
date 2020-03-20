@@ -1,0 +1,254 @@
+# VIATHINKSOFT CODENAME VOLCANO
+# TEST DATABASE
+# !!! PROVIDED DATA IS NOT AUTHORATIVE !!!
+# !!! CONFIDENTIAL !!!
+
+# TODO alles updaten und mit offiziellen VTS daten bestücken
+
+# todo domain ssl datasets
+
+.1.3.6.1.4.1.37476 description:ViaThinkSoft Root
+
+.1.3.6.1.4.1.37476.30 identifier:oidplus
+.1.3.6.1.4.1.37476.30 description:OID+ Information Objects for ViaThinkSoft
+
+# --- DOMAINS
+
+.1.3.6.1.4.1.37476.30.1 type:domains
+.1.3.6.1.4.1.37476.30.1 description:Domains controlled by ViaThinkSoft
+
+.1.3.6.1.4.1.37476.30.1.1 description:Registered at prosite.de
+.1.3.6.1.4.1.37476.30.1.1.1 description:Account viathinksoft.com
+.1.3.6.1.4.1.37476.30.1.1.1.1 identifier:de
+.1.3.6.1.4.1.37476.30.1.1.1.1 description:Sub-identifiers are the crc32 values of the full domain name. In case of a conflict, the next free available OID is used.
+.1.3.6.1.4.1.37476.30.1.1.1.1 allocation-mech:crc32(domain)/conflict=+1
+.1.3.6.1.4.1.37476.30.1.1.1.2 identifier:com
+.1.3.6.1.4.1.37476.30.1.1.1.2 description:Sub-identifiers are the crc32 values of the full domain name. In case of a conflict, the next free available OID is used.
+.1.3.6.1.4.1.37476.30.1.1.1.2 allocation-mech:crc32(domain)/conflict=+1
+
+.1.3.6.1.4.1.37476.30.1.2 description:Registered at Strato
+.1.3.6.1.4.1.37476.30.1.2.1 description:Account of Michael Düpjohann
+.1.3.6.1.4.1.37476.30.1.2.1.1 identifier:de
+.1.3.6.1.4.1.37476.30.1.2.1.1 description:Sub-identifiers are the crc32 values of the full domain name. In case of a conflict, the next free available OID is used.
+.1.3.6.1.4.1.37476.30.1.2.1.1 allocation-mech:crc32(domain)/conflict=+1
+
+.1.3.6.1.4.1.37476.30.1.3 description:Registered at United Domains
+.1.3.6.1.4.1.37476.30.1.3.1 description:Account of ViaThinkSoft
+.1.3.6.1.4.1.37476.30.1.3.1.1 identifier:de
+.1.3.6.1.4.1.37476.30.1.3.1.1 description:Sub-identifiers are the crc32 values of the full domain name. In case of a conflict, the next free available OID is used.
+.1.3.6.1.4.1.37476.30.1.3.1.1 allocation-mech:crc32(domain)/conflict=+1
+
+.1.3.6.1.4.1.37476.30.1.4 description:Registered at 1&1
+.1.3.6.1.4.1.37476.30.1.4.1 description:Account of ViaThinkSoft
+.1.3.6.1.4.1.37476.30.1.4.1.1 identifier:de
+.1.3.6.1.4.1.37476.30.1.4.1.1 description:Sub-identifiers are the crc32 values of the full domain name. In case of a conflict, the next free available OID is used.
+.1.3.6.1.4.1.37476.30.1.4.1.1 allocation-mech:crc32(domain)/conflict=+1
+
+# --- Network (IPv4, IPv6)
+
+.1.3.6.1.4.1.37476.30.2 type:network
+
+# --- ViaThinkSoft OIDs ---
+
+.1.3.6.1.4.1.37476.1 identifier:members
+.1.3.6.1.4.1.37476.1 description:Members of ViaThinkSoft
+
+.1.3.6.1.4.1.37476.2 identifier:products
+.1.3.6.1.4.1.37476.2 description:Products of ViaThinkSoft
+
+.1.3.6.1.4.1.37476.9999 identifier:example
+.1.3.6.1.4.1.37476.9999 unicodelabel:Example
+
+# --- ViaThinkSoft CLSIDs ---
+
+.1.3.6.1.4.1.37476.30.3 type:clsid
+
+.1.3.6.1.4.1.37476.30.3.999 identifier:example
+
+.1.3.6.1.4.1.37476.30.3.999.1 identifier:myclsid
+.1.3.6.1.4.1.37476.30.3.999.1 search(clsid):{0001}
+
+# --- ViaThinkSoft Package names ---
+#packagename:de.viathinksoft delegation example
+#packagename:de.viathinksoft.example soa
+
+# --- ViaThinkSoft DOIs ---
+
+# --- ViaThinkSoft Package names ---
+
+# --- ViaThinkSoft MISC ---
+#misc:viathinksoft.members
+#misc:viathinksoft.az
+#misc:viathinksoft.az.a.2012
+
+# --- ViaThinkSoft licenses ---
+#licmgr:viathinksoft delegation decoder
+#licmgr:viathinksoft.decoder license:GPL
+
+#licmgr:viathinksoft.decoder.vclA license LGPL
+
+# --- ViaThinkSoft IPv4 delegations ---
+
+# TODO: datumsangaben
+# TODO: cahost
+# TODO: revdns
+
+.1.3.6.1.4.1.37476.30.2.1 description:netdirekt e.K.
+.1.3.6.1.4.1.37476.30.2.1.1 description:Customer ViaThinkSoft
+.1.3.6.1.4.1.37476.30.2.1.1.1 description:Server Alpha
+.1.3.6.1.4.1.37476.30.2.1.1.1 status:cancelled
+
+.1.3.6.1.4.1.37476.30.2.1.1.1.4 identifier:ipv4
+.1.3.6.1.4.1.37476.30.2.1.1.1.4 allocation-mech:crc32(cidr)/conflict=+1
+
+# TODO network cidr unterkategorie
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 cidr:84.16.234.13/32
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 status:cancelled
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 if:eth0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 type:ipv4
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 netmask:255.255.255.0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 network:84.16.234.0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 network-cidr:84.16.234.0/24
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 broadcast:84.16.234.255
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 gateway:84.16.234.1
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 dns-nameserver:217.20.116.1
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 dns-nameserver:217.20.115.1
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 dns-nameserver:62.80.2.35
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 dns-nameserver:213.221.110.235
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 service:www
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.715489493 service:mail
+
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 cidr:84.16.228.116/32
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 status:cancelled
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 if:eth0:0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 type:ipv4
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 netmask:255.255.255.0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 network:84.16.228.0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 network-cidr:84.16.228.0/24
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 broadcast:84.16.228.255
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 service:ssh
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 service:ftp
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.4150533370 service:www
+
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 cidr:84.16.228.117/32
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 status:cancelled
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 if:eth0:1
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 type:ipv4
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 netmask:255.255.255.0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 network:84.16.228.0
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 network-cidr:84.16.228.0/24
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 broadcast:84.16.228.255
+.1.3.6.1.4.1.37476.30.2.1.1.1.4.1339587487 service:www
+
+.1.3.6.1.4.1.37476.30.2.1.1.2 description:Server Beta
+.1.3.6.1.4.1.37476.30.2.1.1.2 status:cancelled
+
+.1.3.6.1.4.1.37476.30.2.1.1.2.4 identifier:ipv4
+.1.3.6.1.4.1.37476.30.2.1.1.2.4 allocation-mech:crc32(cidr)/conflict=+1
+
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 cidr:89.149.253.178/32
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 status:cancelled
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 if:eth1
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 type:ipv4
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 netmask:255.255.255.0
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 network:89.149.253.0
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 network-cidr:89.149.253.0/24
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 broadcast:89.149.253.255
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 gateway:89.149.253.1
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 dns-nameserver:217.20.116.1
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 dns-nameserver:217.20.115.1
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 service:www
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 service:ftp
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 service:ssh
+.1.3.6.1.4.1.37476.30.2.1.1.2.4.2313053751 service:mail
+
+###
+
+.1.3.6.1.4.1.37476.30.2.2 description:Leaseweb
+.1.3.6.1.4.1.37476.30.2.2.1 description:Customer ViaThinkSoft
+.1.3.6.1.4.1.37476.30.2.2.1.1 description:Server Gamma
+.1.3.6.1.4.1.37476.30.2.2.1.1 status:active
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.4 identifier:ipv4
+.1.3.6.1.4.1.37476.30.2.2.1.1.4 allocation-mech:crc32(cidr)/conflict=+1
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 cidr:95.211.38.42/32
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 status:active
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 if:eth0
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 type:ipv4
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 netmask:255.255.255.224
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 network:95.211.38.32
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 network-cidr:95.211.38.32/27
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 broadcast:95.211.38.63
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 gateway:95.211.38.62
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 dns-nameserver:62.212.65.123
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 dns-nameserver:62.212.64.122
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 revdns:viathinksoft.de
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 service:www
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.2069468249 service:mail
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 cidr:95.211.38.108/32
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 status:active
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 confidential
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 network-cidr:95.211.38.96/27
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 if:eth0:1
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 type:ipv4
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 netmask:255.255.255.224
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 network:95.211.38.96
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 broadcast:95.211.38.127
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 gateway:95.211.38.126
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 dns-nameserver:62.212.65.123
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 dns-nameserver:62.212.64.122
+# TODO: ändern?
+# .1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 revdns:ssh.viathinksoft.de
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 revdns:hosted-by.leaseweb.com
+.1.3.6.1.4.1.37476.30.2.2.1.1.4.3825059945 service:ssh
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.6 identifier:ipv6
+.1.3.6.1.4.1.37476.30.2.2.1.1.6 allocation-mech:crc32(cidr)/conflict=+1
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814 network-cidr:2001:1af8:4100:a061:1::/112
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814 type:ipv6
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814 name:ViaThinkSoft IPv6 Rack address space (in 2001:1af8:4100:a061::/64 net)
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814 description:Sub-identifier is the last 16 bits of the address in decimal format
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814 allocation-mech:lastIpBits(16)
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 name:block-1337
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 cidr:2001:1af8:4100:a061:1::1337/128
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 status:active
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 assignment:daniel-marschall@viathinksoft.de 2012-02-22
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 if:eth0
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 type:ipv6
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 netmask:64
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 gateway:2001:1af8:4100:a061::1
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 name:ViaThinkSoft Main IPv6
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 revdns:ipv6.viathinksoft.de
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 service:www
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 service:mail
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 cahost:viathinksoft.de
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.4919 cahost:www.viathinksoft.de
+
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #name:block-4041
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #cidr:2001:1af8:4100:a061:1::4041/128
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #status:active
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #confidential
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #assignment:daniel-marschall@viathinksoft.de 2012-02-26
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #if:eth0
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #type:ipv6
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #netmask:64
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #gateway:2001:1af8:4100:a061::1
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #name:ViaThinkSoft Auth IPv6
+# TODO: ändern?
+# .1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #revdns:ssh.viathinksoft.de
+.1.3.6.1.4.1.37476.30.2.2.1.1.6.890164814.16449 #service:ssh
+
+# --- ViaThinkSoft CA managment ---
+
+# --- ViaThinkSoft Aktenzeichen ---
+
+# --- Human Resources ---
+
+#hr:de.viathinksoft soa
+#hr:de.viathinksoft delegation marschall
+#hr:de.viathinksoft.marschall short ma
+#hr:de.viathinksoft delegation vn

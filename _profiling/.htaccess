@@ -1,0 +1,25 @@
+# https://stackoverflow.com/a/26155051/488539
+
+# Redirect to HTTPS
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# Authenticate users only when using HTTPS
+<If "%{HTTPS} == 'on'">
+	AuthType Basic
+	AuthName "ViaThinkSoft"
+	AuthUserFile /home/daniel-marschall/.htpasswd
+	# Prevent this 'Require' directive from overriding any merged previously
+	<IfVersion >= 2.4>
+		AuthMerging And
+	</IfVersion>
+	Require valid-user
+</If>
+
+# ---
+
+RewriteEngine Off
+RewriteOptions Inherit
+Options +Indexes
+
