@@ -5,6 +5,6 @@
 
 eingabefehler im request beim webinterface darf nicht in "internal db error" volcanoexception enden
 
-95.211.38.42 wird nicht erkannt... warum? man muss "ipv4" davor machen
+212.32.236.132 wird nicht erkannt... warum? man muss "ipv4" davor machen
 --> das liegt daran, dass der eigentliche index /32 am ende noch hat
 

@@ -30,19 +30,19 @@ search-result:  No exact match and no superior node was found
 
 oid zeile: wenn kein asn1 id, dann den lastarc nicht wiederholen. außerdem eine zeile mit "name" oder "index" dahinter anzeigen
 
-erkennen, ob ipv4, ipv6 etc, und dann automatisch den prefix "ipv4" etc verwenden --> 95.211.38.42 dann möglich
+erkennen, ob ipv4, ipv6 etc, und dann automatisch den prefix "ipv4" etc verwenden --> 212.32.236.132 dann möglich
 
 automatischen tree/browsing für indexes, z.b. browsing von /128 auf /112 möglich, da dieses hierarchie nicht in OIDs stattfindet
 
 
 die ausgabe von listall ist viel zu breit, wegen den automatisch generierten oids
 
-ipv6:2001:1af8:4100:a061:1::4041/129
+ipv6:2001:1af8:4900:a012:2::1337/129
 -- als illegal erkennen
 
 funktioniert die suche, wenn man /127 sucht, und /112 existiert?
-ipv6:2001:1af8:4100:a061:1::4041/127 geht
-oidplus:2001:1af8:4100:a061:1::4041/127 geht nicht
+ipv6:2001:1af8:4900:a012:2::1337/127 geht
+oidplus:2001:1af8:4900:a012:2::1337/127 geht nicht
 --> ja, aber nur bei "ipv6:" prefix
 
 bei ipv4/6 muss es eine möglichkeit geben, den baum nicht nur aus sicht der OIDs wiederzugeben, sondern auch aus sicht der NS-elemente (z.b. 112 -> 128)
